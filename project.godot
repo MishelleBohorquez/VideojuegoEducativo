@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="videojuego"
+config/name="VideojuegoEducativo"
 run/main_scene="uid://dhutf1niljd00"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
