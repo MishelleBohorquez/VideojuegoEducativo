@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3het8lfdvwn3"
-path="res://.godot/imported/Plataforma largatierra.png-03f458a315cbe71c66f5f68278b7a7f1.ctex"
+uid="uid://c6arcdgn3te7x"
+path="res://.godot/imported/Escaleras.png-2bbabe290d458e152b6e999c64de44bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MundoTierra/Plataforma largatierra.png"
-dest_files=["res://.godot/imported/Plataforma largatierra.png-03f458a315cbe71c66f5f68278b7a7f1.ctex"]
+source_file="res://sprites/Escaleras.png"
+dest_files=["res://.godot/imported/Escaleras.png-2bbabe290d458e152b6e999c64de44bf.ctex"]
 
 [params]
 
