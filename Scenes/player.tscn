@@ -220,7 +220,7 @@ size = Vector2(18, 29)
 position = Vector2(62, 39)
 script = SubResource("GDScript_v0iea")
 move_speed = 140.0
-jump_speed = 400.0
+jump_speed = 280.0
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
