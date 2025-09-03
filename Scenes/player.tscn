@@ -216,7 +216,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnsp"]
 size = Vector2(18, 29)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 position = Vector2(62, 39)
 script = SubResource("GDScript_v0iea")
 move_speed = 140.0

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7dkv2p715b2t"
-path="res://.godot/imported/Coin.png-3b8d905d5d51e9306029f99e0b8daba2.ctex"
+uid="uid://yv66f7kv8kr4"
+path="res://.godot/imported/TarjeZanahoria.png-d137a15631851e8cec215aeac2aa3ab3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Animated Objects/Coin/Coin.png"
-dest_files=["res://.godot/imported/Coin.png-3b8d905d5d51e9306029f99e0b8daba2.ctex"]
+source_file="res://TarjetasEnPNG/TarjeZanahoria.png"
+dest_files=["res://.godot/imported/TarjeZanahoria.png-d137a15631851e8cec215aeac2aa3ab3.ctex"]
 
 [params]
 
@@ -25,7 +25,7 @@ mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
-process/fix_alpha_border=false
+process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
