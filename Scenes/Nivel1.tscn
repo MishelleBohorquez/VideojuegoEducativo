@@ -1,8 +1,6 @@
-[gd_scene load_steps=23 format=4 uid="uid://dhutf1niljd00"]
+[gd_scene load_steps=27 format=4 uid="uid://dhutf1niljd00"]
 
 [ext_resource type="Texture2D" uid="uid://ek3ksmk8c57g" path="res://FondoNubes/1.png" id="1_f7rsj"]
-[ext_resource type="Texture2D" uid="uid://bbroywty1gk7k" path="res://Free/Background/Gray.png" id="1_j4wpc"]
-[ext_resource type="Texture2D" uid="uid://bhkomdkana66y" path="res://Free/Background/Color fondo.png" id="1_tsyv3"]
 [ext_resource type="PackedScene" uid="uid://5b0cu0a4gjit" path="res://Scenes/player.tscn" id="1_vujgx"]
 [ext_resource type="Texture2D" uid="uid://ingkt7iy3xpj" path="res://FondoNubes/2.png" id="2_5p3r4"]
 [ext_resource type="Texture2D" uid="uid://dgo7thv125l87" path="res://Free/Terrain/PLataforma larga.png" id="2_ska4m"]
@@ -12,25 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://dqt60ouriufuy" path="res://FondoNubes/4.png" id="4_18sxr"]
 [ext_resource type="Texture2D" uid="uid://can8qu4tddyyt" path="res://Free/Terrain/Plataformapiso.png" id="5_chdfd"]
 [ext_resource type="Texture2D" uid="uid://b1bvko6s6hpf1" path="res://FondoNubes/5.png" id="5_uxlvo"]
+[ext_resource type="Texture2D" uid="uid://f1ww7yd5s7kx" path="res://MundoTierra/middleground.png" id="12_nnbnc"]
 [ext_resource type="Texture2D" uid="uid://b8kkmavp1cuhw" path="res://MundoTierra/background.png" id="13_5p3r4"]
+[ext_resource type="Texture2D" uid="uid://12foa3wesyyn" path="res://MundoTierra/tileset.png" id="13_18sxr"]
+[ext_resource type="Texture2D" uid="uid://c6arcdgn3te7x" path="res://sprites/Escaleras.png" id="14_uxlvo"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_18sxr"]
-size = Vector2(21, 31)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_chdfd"]
-texture = ExtResource("1_tsyv3")
-texture_region_size = Vector2i(64, 64)
-0:0/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hdxwh"]
-texture = ExtResource("1_j4wpc")
-texture_region_size = Vector2i(64, 64)
-0:0/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_hdxwh"]
+[sub_resource type="TileSet" id="TileSet_b0apr"]
 tile_size = Vector2i(64, 64)
-sources/3 = SubResource("TileSetAtlasSource_hdxwh")
-sources/0 = SubResource("TileSetAtlasSource_chdfd")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwb63"]
 texture = ExtResource("2_ska4m")
@@ -319,86 +305,285 @@ sources/1 = SubResource("TileSetAtlasSource_dwb63")
 sources/2 = SubResource("TileSetAtlasSource_cil57")
 sources/5 = SubResource("TileSetAtlasSource_0edta")
 
-[node name="Level1" type="Node2D"]
-
-[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
-
-[node name="Area2D" type="Area2D" parent="ParallaxBackground2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ParallaxBackground2/Area2D"]
-position = Vector2(942.5, 239.5)
-shape = SubResource("RectangleShape2D_18sxr")
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2(1217, 136)
-scale = Vector2(2.48958, 1.125)
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1qox3"]
 texture = ExtResource("13_5p3r4")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ug6r"]
+texture = ExtResource("12_nnbnc")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+[sub_resource type="TileSet" id="TileSet_cbyik"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_1qox3")
+sources/1 = SubResource("TileSetAtlasSource_5ug6r")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nnbnc"]
+texture = ExtResource("13_18sxr")
+1:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+3:1/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+12:2/0 = 0
+14:2/0 = 0
+16:2/0 = 0
+18:2/0 = 0
+1:3/0 = 0
+3:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+12:3/0 = 0
+14:3/0 = 0
+16:3/0 = 0
+18:3/0 = 0
+1:4/0 = 0
+3:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+16:4/0 = 0
+18:4/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+3:10/0 = 0
+3:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:10/0 = 0
+4:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+12:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+3:11/0 = 0
+3:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:11/0 = 0
+4:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_82y08"]
+texture = ExtResource("14_uxlvo")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+0:16/0 = 0
+1:16/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_18sxr"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_nnbnc")
+sources/1 = SubResource("TileSetAtlasSource_82y08")
+
+[node name="Levels" type="Node2D"]
+
+[node name="Level1" type="Node2D" parent="."]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Level1"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Level1/ParallaxBackground"]
 motion_scale = Vector2(0.8, 1)
 motion_mirroring = Vector2(479, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+[node name="Sprite2D" type="Sprite2D" parent="Level1/ParallaxBackground/ParallaxLayer"]
 position = Vector2(240, 135.905)
 scale = Vector2(0.833333, 0.840094)
 texture = ExtResource("1_f7rsj")
 
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="Level1/ParallaxBackground"]
 motion_scale = Vector2(0.8, 1)
 motion_mirroring = Vector2(479, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+[node name="Sprite2D" type="Sprite2D" parent="Level1/ParallaxBackground/ParallaxLayer2"]
 position = Vector2(240, 136.25)
 scale = Vector2(0.833333, 0.841049)
 texture = ExtResource("2_5p3r4")
 
-[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="Level1/ParallaxBackground"]
 motion_scale = Vector2(0.8, 0.8)
 motion_mirroring = Vector2(479, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+[node name="Sprite2D" type="Sprite2D" parent="Level1/ParallaxBackground/ParallaxLayer3"]
 position = Vector2(240, 135.5)
 scale = Vector2(0.833333, 0.83642)
 texture = ExtResource("3_nnbnc")
 
-[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="Level1/ParallaxBackground"]
 motion_scale = Vector2(0.8, 1)
 motion_mirroring = Vector2(479, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+[node name="Sprite2D" type="Sprite2D" parent="Level1/ParallaxBackground/ParallaxLayer4"]
 position = Vector2(240, 135.75)
 scale = Vector2(0.833333, 0.834877)
 texture = ExtResource("4_18sxr")
 
-[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="Level1/ParallaxBackground"]
 motion_scale = Vector2(0.8, 1)
 motion_mirroring = Vector2(479, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+[node name="Sprite2D" type="Sprite2D" parent="Level1/ParallaxBackground/ParallaxLayer5"]
 position = Vector2(240, 136)
 scale = Vector2(0.833333, 0.839506)
 texture = ExtResource("5_uxlvo")
 
-[node name="TilemapLayers" type="Node2D" parent="."]
+[node name="TilemapLayers" type="Node2D" parent="Level1"]
 
-[node name="Background" type="TileMapLayer" parent="TilemapLayers"]
+[node name="Background" type="TileMapLayer" parent="Level1/TilemapLayers"]
 visible = false
 position = Vector2(1, 0)
 tile_map_data = PackedByteArray("AAAHAAMAAAAAAAAAAAAGAAMAAAAAAAAAAAAFAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAADAAMAAAAAAAAAAAACAAMAAAAAAAAAAAACAAIAAAAAAAAAAAABAAIAAAAAAAAAAAABAAMAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAGAAEAAAAAAAAAAAAGAAIAAAAAAAAAAAAFAAIAAAAAAAAAAAAEAAIAAAAAAAAAAAAFAAEAAAAAAAAAAAAEAAEAAAAAAAAAAAADAAEAAAAAAAAAAAACAAEAAAAAAAAAAAABAAEAAAAAAAAAAAADAAIAAAAAAAAAAAAHAAIAAAAAAAAAAAAHAAEAAAAAAAAAAAAHAAAAAAAAAAAAAAA=")
-tile_set = SubResource("TileSet_hdxwh")
+tile_set = SubResource("TileSet_b0apr")
 
-[node name="Frontground" type="TileMapLayer" parent="TilemapLayers"]
+[node name="Frontground" type="TileMapLayer" parent="Level1/TilemapLayers"]
 position = Vector2(1, 0)
 tile_map_data = PackedByteArray("AAAMAA0ABQAAAAAAAAAMAA4ABQAAAAEAAAAMAA8ABQAAAAEAAAANAA0ABQABAAAAAAANAA4ABQABAAEAAAANAA8ABQABAAEAAAAOAA0ABQABAAAAAAAOAA4ABQABAAEAAAAOAA8ABQABAAEAAAAPAA0ABQACAAAAAAAPAA4ABQACAAEAAAAPAA8ABQACAAEAAAACAAwAAQAAAAAAAAADAAwAAQABAAAAAAADABAAAgACAAAAAAAEAAwAAQACAAAAAAAEABAAAgADAAAAAAAFAAwAAQADAAAAAAAFABAAAgAEAAAAAAAGABAAAgAFAAAAAAAHAAoAAQAAAAAAAAAHABAAAgAGAAAAAAAIAAoAAQABAAAAAAAIABAAAgAHAAAAAAAJAAoAAQACAAAAAAAJABAAAgAIAAAAAAAKAAoAAQADAAAAAAAKABAAAgAJAAAAAAALABAAAgAKAAAAAAAMABAAAgALAAAAAAANABAAAgAMAAAAAAAOABAAAgANAAAAAAAPABAAAgAOAAAAAAAQABAAAgAPAAAAAAARAAoAAQAAAAAAAAARABAAAgAQAAAAAAASAAoAAQABAAAAAAASABAAAgARAAAAAAATAAoAAQACAAAAAAATABAAAgASAAAAAAAUAAoAAQADAAAAAAAUABAAAgASAAAAAAAVABAAAgAQAAAAAAAWABAAAgARAAAAAAAXAAwAAQAAAAAAAAAXABAAAgASAAAAAAAYAAwAAQABAAAAAAAYABAAAgATAAAAAAAZAAwAAQACAAAAAAAZABAAAgAUAAAAAAAaAAwAAQADAAAAAAAaABAAAgAVAAAAAAAbABAAAgAWAAAAAAAAABAAAgAAAAAAAAAdABAAAgALAAAAAAACABAAAgABAAAAAAABABAAAgABAAAAAAAcABAAAgAWAAAAAAAeABAAAgALAAAAAAAfABAAAgABAAAAAAAgABAAAgACAAAAAAAhABAAAgADAAAAAAAiABAAAgAEAAAAAAAjABAAAgAFAAAAAAAkABAAAgAGAAAAAAAlABAAAgAHAAAAAAAmABAAAgAIAAAAAAAnABAAAgAJAAAAAAAoABAAAgAKAAAAAAApABAAAgALAAAAAAAqABAAAgAMAAAAAAArABAAAgANAAAAAAAsABAAAgAOAAAAAAAtABAAAgAPAAAAAAAuABAAAgAQAAAAAAAvABAAAgARAAAAAAA2ABAAAgASAAAAAAA3ABAAAgATAAAAAAA4ABAAAgAUAAAAAAA5ABAAAgAVAAAAAAA6ABAAAgAWAAAAAAA7ABAAAgAXAAAAAAAwABAAAgAMAAAAAAAxABAAAgANAAAAAAAyABAAAgAOAAAAAAAzABAAAgAPAAAAAAA0ABAAAgAQAAAAAAA1ABAAAgARAAAAAAAeAAoAAQAAAAAAAAAfAAoAAQABAAAAAAAgAAoAAQACAAAAAAAhAAoAAQADAAAAAAAkAA0AAQAAAAAAAAAlAA0AAQABAAAAAAAmAA0AAQACAAAAAAAnAA0AAQADAAAAAAApAAoAAQAAAAAAAAAqAAoAAQADAAAAAAA3AAwAAQAAAAAAAAA4AAwAAQABAAAAAAA5AAwAAQADAAAAAAAtAAcAAQAAAAAAAAAuAAcAAQABAAAAAAAvAAcAAQADAAAAAAAyAAoAAQAAAAAAAAAzAAoAAQABAAAAAAA0AAoAAQACAAAAAAA1AAoAAQADAAAAAAAsAA0ABQAAAAAAAAAsAA4ABQAAAAEAAAAsAA8ABQAAAAEAAAAtAA0ABQABAAAAAAAtAA4ABQABAAEAAAAtAA8ABQABAAEAAAAuAA0ABQABAAAAAAAuAA4ABQABAAEAAAAuAA8ABQABAAEAAAAwAA0ABQACAAAAAAAwAA4ABQACAAEAAAAwAA8ABQACAAEAAAAvAA0ABQABAAAAAAAvAA4ABQABAAEAAAAvAA8ABQABAAEAAAA=")
 tile_set = SubResource("TileSet_tsyv3")
+
+[node name="Level2" type="Node2D" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Level2"]
+
+[node name="Background" type="TileMapLayer" parent="Level2/TileMapLayer"]
+tile_map_data = PackedByteArray("AAAOAAUAAQAAAAEAAAAOAAYAAQAAAAIAAAAOAAcAAQAAAAAAAAAPAAQAAQABAAAAAAAPAAUAAQABAAEAAAAPAAYAAQABAAIAAAAPAAcAAQABAAAAAAAQAAQAAQACAAAAAAAQAAUAAQACAAEAAAAQAAYAAQACAAIAAAAQAAcAAQACAAAAAAARAAQAAQADAAAAAAARAAUAAQADAAEAAAARAAYAAQADAAIAAAARAAcAAQADAAAAAAASAAQAAQAEAAAAAAASAAUAAQAEAAEAAAASAAYAAQAEAAIAAAASAAcAAQAEAAAAAAATAAQAAQAFAAAAAAATAAUAAQAFAAEAAAATAAYAAQAFAAIAAAATAAcAAQAFAAAAAAAUAAQAAQAAAAAAAAAUAAUAAQAAAAEAAAAUAAYAAQAAAAIAAAAUAAcAAQAAAAAAAAAVAAQAAQABAAAAAAAVAAUAAQABAAEAAAAVAAYAAQABAAIAAAAVAAcAAQABAAAAAAAOAAQAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_cbyik")
+
+[node name="Frontground" type="TileMapLayer" parent="Level2/TileMapLayer"]
+position = Vector2(1, 0)
+tile_map_data = PackedByteArray("AAA4ABEAAAAEAAAAAAA4ACAAAAADAAoAAAA4ACEAAAADAAsAAAA5ABEAAQAAAAEAAAA5ACAAAAAEAAoAAAA5ACEAAAAEAAsAAAA6ABEAAQABAAEAAAA6ACAAAAADAAoAAAA6ACEAAAADAAsAAAA7ABEAAAAEAAAAAAA7ACAAAAAEAAoAAAA7ACEAAAAEAAsAAAA8ABEAAAAEAAAAAAA8ACAAAAADAAoAAAA8ACEAAAADAAsAAAA9ABEAAAAEAAAAAAA9ACAAAAAEAAoAAAA9ACEAAAAEAAsAAAA+ABEAAAAEAAAAAAA+ACAAAAADAAoAAAA+ACEAAAADAAsAAAA/ABEAAAAEAAAAAAA/ACAAAAAEAAoAAAA/ACEAAAAEAAsAAABAABEAAAAEAAAAAABAACAAAAADAAoAAABAACEAAAADAAsAAABBABEAAAAEAAAAAABBACAAAAAEAAoAAABBACEAAAAEAAsAAABCABEAAAAEAAAAAABCACAAAAADAAoAAABCACEAAAADAAsAAABDABEAAAAEAAAAAABDACAAAAAEAAoAAABDACEAAAAEAAsAAABEABEAAAAEAAAAAABEACAAAAADAAoAAABEACEAAAADAAsAAABFABEAAAAEAAAAAABFACAAAAAEAAoAAABFACEAAAAEAAsAAABGABEAAAAEAAAAAABGACAAAAADAAoAAABGACEAAAADAAsAAABHABEAAAAEAAAAAABHACAAAAAEAAoAAABHACEAAAAEAAsAAABIABEAAAAEAAAAAABIACAAAAADAAoAAABIACEAAAADAAsAAABJABEAAAAEAAAAAABJACAAAAAEAAoAAABJACEAAAAEAAsAAABKABEAAAAEAAAAAABKACAAAAADAAoAAABKACEAAAADAAsAAABLABEAAAAEAAAAAABLACAAAAAEAAoAAABLACEAAAAEAAsAAABMABEAAAAEAAAAAABMACAAAAADAAoAAABMACEAAAADAAsAAABNABEAAAAEAAAAAABNACAAAAAEAAoAAABNACEAAAAEAAsAAABOABEAAAAEAAAAAABOACAAAAADAAoAAABOACEAAAADAAsAAABPABEAAAAEAAAAAABPACAAAAAEAAoAAABPACEAAAAEAAsAAABQABEAAAAEAAAAAABQACAAAAADAAoAAABQACEAAAADAAsAAABRABEAAAAEAAAAAABRACAAAAAEAAoAAABRACEAAAAEAAsAAABSABEAAAAEAAAAAABSACAAAAADAAoAAABSACEAAAADAAsAAABTABEAAAAEAAAAAABTACAAAAAEAAoAAABTACEAAAAEAAsAAABUABEAAAAEAAAAAABUACAAAAADAAoAAABUACEAAAADAAsAAABVABEAAAAGAAAAAABVACAAAAAEAAoAAABVACEAAAAEAAsAAAA5ABIAAQAAAAIAAAA5ABMAAQAAAAMAAAA5ABQAAQAAAAQAAAA5ABUAAQAAAAUAAAA5ABYAAQAAAAYAAAA5ABcAAQAAAAcAAAA5ABgAAQAAAAgAAAA5ABkAAQAAAAkAAAA5ABoAAQAAAAoAAAA5ABsAAQAAAAsAAAA5ABwAAQAAAAwAAAA5AB0AAQAAAA0AAAA5AB4AAQAAAA4AAAA5AB8AAQAAAA8AAAA6ABIAAQABAAIAAAA6ABMAAQABAAMAAAA6ABQAAQABAAQAAAA6ABUAAQABAAUAAAA6ABYAAQABAAYAAAA6ABcAAQABAAcAAAA6ABgAAQABAAgAAAA6ABkAAQABAAkAAAA6ABoAAQABAAoAAAA6ABsAAQABAAsAAAA6ABwAAQABAAwAAAA6AB0AAQABAA0AAAA6AB4AAQABAA4AAAA6AB8AAQABAA8AAAA5AA8AAQAAAAAAAAA5ABAAAQAAAAEAAAA6AA8AAQABAAAAAAA6ABAAAQABAAEAAAA=")
+tile_set = SubResource("TileSet_18sxr")
 
 [node name="Player" parent="." instance=ExtResource("1_vujgx")]
 position = Vector2(53, 175)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-
-[connection signal="body_entered" from="ParallaxBackground2/Area2D" to="ParallaxBackground2/Area2D" method="_on_body_entered"]
