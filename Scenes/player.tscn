@@ -1,0 +1,224 @@
+[gd_scene load_steps=26 format=3 uid="uid://5b0cu0a4gjit"]
+
+[ext_resource type="Texture2D" uid="uid://cwoq3pg0sgpxv" path="res://sprites/player/fall.png" id="1_vgqql"]
+[ext_resource type="Texture2D" uid="uid://chjm8gtwqjilr" path="res://sprites/player/idle.png" id="2_fkybt"]
+[ext_resource type="Texture2D" uid="uid://cj34786iivwk4" path="res://sprites/player/jump.png" id="3_x3wgy"]
+[ext_resource type="Texture2D" uid="uid://d2wly0svku4vx" path="res://sprites/player/run.png" id="4_3smsa"]
+
+[sub_resource type="GDScript" id="GDScript_v0iea"]
+resource_local_to_scene = true
+script/source = "extends CharacterBody2D
+
+@export var move_speed: float 
+@export var jump_speed: float 
+#El export se utiliza para que en la parte gráfica de las características se pueda ajustar la velocidad o salto la variable es la velocidad en que se mueve
+@onready var animated_Sprite = $AnimatedSprite
+var is_facing_right = true
+ # Para que el jugador gire en caso de no mirar a la derecha
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
+#Variable con el valor de la gravedad por defecto
+
+func _physics_process(delta):
+	
+	jump(delta)
+	move_x()
+	flip()
+	update_animations()
+	move_and_slide()
+
+func update_animations():
+		if velocity.x:
+			animated_Sprite.play(\"run\")
+		else:
+			animated_Sprite.play(\"idle\")
+	
+	#Ahora se van a controlar los giros con move_and_slide
+		#Si el jugador esta mirando a la derecha y se oprime izq
+		#Si el jugador esta mirando a la izq y se oprime derecha
+func flip():
+	if (is_facing_right and velocity.x < 0 ) or (not is_facing_right and velocity.x > 0):
+		scale.x *= -1
+		#Si la escala en x vale en 1 ahora, valerá -1
+		is_facing_right = not is_facing_right
+	
+#Ahora se controla el movimiento horizontal
+func move_x():
+	var input_axis= Input.get_axis(\"move_left\",\"move_right\")
+	#Permite el movimiento a la izquierda y derecha
+	velocity.x = input_axis * move_speed
+	
+func jump(delta):
+	if Input .is_action_just_pressed(\"jump\") and is_on_floor():
+		velocity.y = -jump_speed
+		
+	if not is_on_floor():
+		velocity.y += gravity*delta
+	# Para que el muñeco no salte infinitamente, vamos a poner una variable de gravedad
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8erm5"]
+atlas = ExtResource("1_vgqql")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
+atlas = ExtResource("2_fkybt")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tx1dd"]
+atlas = ExtResource("2_fkybt")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gymyn"]
+atlas = ExtResource("2_fkybt")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pu2lt"]
+atlas = ExtResource("2_fkybt")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukyrk"]
+atlas = ExtResource("2_fkybt")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dp3o"]
+atlas = ExtResource("2_fkybt")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4iuc"]
+atlas = ExtResource("2_fkybt")
+region = Rect2(576, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fd4e3"]
+atlas = ExtResource("2_fkybt")
+region = Rect2(672, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqcod"]
+atlas = ExtResource("3_x3wgy")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igrcy"]
+atlas = ExtResource("4_3smsa")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fs7ks"]
+atlas = ExtResource("4_3smsa")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6n3p"]
+atlas = ExtResource("4_3smsa")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_olqyp"]
+atlas = ExtResource("4_3smsa")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpjfl"]
+atlas = ExtResource("4_3smsa")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bi64h"]
+atlas = ExtResource("4_3smsa")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ijsl"]
+atlas = ExtResource("4_3smsa")
+region = Rect2(576, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1odr"]
+atlas = ExtResource("4_3smsa")
+region = Rect2(672, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0gysh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8erm5")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1ek2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tx1dd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gymyn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pu2lt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukyrk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dp3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h4iuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fd4e3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqcod")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igrcy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fs7ks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6n3p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_olqyp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wpjfl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bi64h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ijsl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1odr")
+}],
+"loop": true,
+"name": &"run",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnsp"]
+size = Vector2(18, 29)
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(62, 39)
+script = SubResource("GDScript_v0iea")
+move_speed = 140.0
+jump_speed = 400.0
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0gysh")
+animation = &"fall"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_cvnsp")
