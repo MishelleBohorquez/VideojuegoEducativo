@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://12foa3wesyyn" path="res://MundoTierra/tileset.png" id="13_18sxr"]
 [ext_resource type="Texture2D" uid="uid://c6arcdgn3te7x" path="res://sprites/Escaleras.png" id="14_uxlvo"]
 [ext_resource type="Texture2D" uid="uid://s0kepvy41frf" path="res://MundoTierra/tiletierra.png" id="15_b0apr"]
-[ext_resource type="Script" uid="uid://rnk5oyh2emff" path="res://Scenes/camera_2d.gd" id="17_b0apr"]
+[ext_resource type="Script" path="res://Scenes/camera_2d.gd" id="17_b0apr"]
 [ext_resource type="Texture2D" uid="uid://bo6qgcjy03usp" path="res://TarjetasEnPNG/FISH.png" id="18_jrjn2"]
 [ext_resource type="Texture2D" uid="uid://dfnh7b1wejfn6" path="res://TarjetasEnPNG/PIG.png" id="19_nkpay"]
 [ext_resource type="Texture2D" uid="uid://yv66f7kv8kr4" path="res://TarjetasEnPNG/TarjeZanahoria.png" id="20_jrjn2"]
