@@ -1,0 +1,11 @@
+Label
+Node
+Camera2D
+Node2D
+RayCast2D
+TileMapLayer
+CollisionShape2D
+Area2D
+Sprite2D
+ParallaxLayer
+ParallaxBackground
