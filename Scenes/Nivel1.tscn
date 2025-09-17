@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://ek3ksmk8c57g" path="res://FondoNubes/1.png" id="1_f7rsj"]
 [ext_resource type="Texture2D" uid="uid://b7dkv2p715b2t" path="res://Animated Objects/Coin/Coin.png" id="1_uwnhs"]
-[ext_resource type="PackedScene" uid="uid://5b0cu0a4gjit" path="res://Scenes/player.tscn" id="1_vujgx"]
 [ext_resource type="Texture2D" uid="uid://ingkt7iy3xpj" path="res://FondoNubes/2.png" id="2_5p3r4"]
 [ext_resource type="Texture2D" uid="uid://dgo7thv125l87" path="res://Free/Terrain/PLataforma larga.png" id="2_ska4m"]
 [ext_resource type="Texture2D" uid="uid://c7qh34m4j85jt" path="res://Free/Terrain/Terrain (16x16).png" id="2_vujgx"]
@@ -18,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://12foa3wesyyn" path="res://MundoTierra/tileset.png" id="13_18sxr"]
 [ext_resource type="Texture2D" uid="uid://c6arcdgn3te7x" path="res://sprites/Escaleras.png" id="14_uxlvo"]
 [ext_resource type="Texture2D" uid="uid://s0kepvy41frf" path="res://MundoTierra/tiletierra.png" id="15_b0apr"]
-[ext_resource type="Script" path="res://Scenes/camera_2d.gd" id="17_b0apr"]
+[ext_resource type="Script" uid="uid://rnk5oyh2emff" path="res://Scenes/camera_2d.gd" id="17_b0apr"]
 [ext_resource type="Texture2D" uid="uid://bo6qgcjy03usp" path="res://TarjetasEnPNG/FISH.png" id="18_jrjn2"]
 [ext_resource type="Texture2D" uid="uid://dfnh7b1wejfn6" path="res://TarjetasEnPNG/PIG.png" id="19_nkpay"]
 [ext_resource type="Texture2D" uid="uid://yv66f7kv8kr4" path="res://TarjetasEnPNG/TarjeZanahoria.png" id="20_jrjn2"]
@@ -28,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://htslltxnsjyx" path="res://TarjetasEnPNG/COW.png" id="23_jbyyt"]
 [ext_resource type="Texture2D" uid="uid://iwtqkhsvjmic" path="res://TarjetasEnPNG/DOG.png" id="24_gnyob"]
 [ext_resource type="Texture2D" uid="uid://cx82k4l1vmf77" path="res://TarjetasEnPNG/DUCK.png" id="25_lw5od"]
+[ext_resource type="PackedScene" uid="uid://c7cbyl6kn1rxw" path="res://conejo.tscn" id="28_ldsrl"]
 [ext_resource type="PackedScene" uid="uid://d4lhrxrpcnecd" path="res://Animated Objects/Coin/coin.tscn" id="28_nkpay"]
 
 [sub_resource type="TileSet" id="TileSet_b0apr"]
@@ -1897,12 +1897,6 @@ theme_override_fonts/font = SubResource("SystemFont_ffrhv")
 text = "Winner!"
 vertical_alignment = 1
 
-[node name="Player" parent="." instance=ExtResource("1_vujgx")]
-position = Vector2(24, 112)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-script = ExtResource("17_b0apr")
-
 [node name="Coin" parent="." instance=ExtResource("28_nkpay")]
 position = Vector2(160, 64)
 
@@ -1921,3 +1915,11 @@ position = Vector2(24, 536)
 position = Vector2(144, 80)
 scale = Vector2(1.62143, 1.96429)
 texture = ExtResource("1_uwnhs")
+
+[node name="Player" parent="." instance=ExtResource("28_ldsrl")]
+position = Vector2(32, 128)
+move_speed = 200.0
+jump_speed = 400.0
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+script = ExtResource("17_b0apr")

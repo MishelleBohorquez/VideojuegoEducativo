@@ -13,6 +13,7 @@ config_version=5
 config/name="VideojuegoEducativo"
 run/main_scene="uid://dhutf1niljd00"
 config/features=PackedStringArray("4.4", "GL Compatibility")
+boot_splash/bg_color=Color(0.709685, 0.77631, 0.987135, 1)
 
 [display]
 
@@ -21,6 +22,8 @@ window/size/viewport_height=270
 window/size/window_width_override=1920
 window/size/window_height_override=1080
 window/stretch/mode="canvas_items"
+window/bg_color=Color(0.14, 0.14, 0.14, 1)
+window/hdr_2d=false
 
 [input]
 

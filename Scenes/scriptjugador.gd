@@ -3,14 +3,14 @@ extends CharacterBody2D
 @export var move_speed: float 
 @export var jump_speed: float 
 #El export se utiliza para que en la parte gráfica de las características se pueda ajustar la velocidad o salto la variable es la velocidad en que se mueve
-@onready var animated_Sprite = $AnimatedSprite
+@onready var animated_Sprite = $SpriteAnimado
 var is_facing_right = true
  # Para que el jugador gire en caso de no mirar a la derecha
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 #Variable con el valor de la gravedad por defecto
 
 func _physics_process(delta):
-	
+		
 	jump(delta)
 	move_x()
 	flip()
