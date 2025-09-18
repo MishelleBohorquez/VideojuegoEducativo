@@ -160,7 +160,7 @@ size = Vector2(25, 32)
 
 [node name="Jugador" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_e13yb")
-move_speed = 200.0
+move_speed = 150.0
 jump_speed = 500.0
 
 [node name="Camera2D" type="Camera2D" parent="."]

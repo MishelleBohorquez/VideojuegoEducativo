@@ -356,6 +356,7 @@ position = Vector2(288, -288)
 
 [node name="Jugador" parent="Nivel1" instance=ExtResource("1_b0apr")]
 position = Vector2(-144, 144)
+move_speed = 100.0
 
 [node name="Area2D" type="Area2D" parent="Nivel1"]
 script = ExtResource("14_1qox3")
