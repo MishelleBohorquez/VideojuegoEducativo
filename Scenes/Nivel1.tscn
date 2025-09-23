@@ -358,10 +358,10 @@ position = Vector2(288, -288)
 position = Vector2(-144, 144)
 move_speed = 100.0
 
-[node name="Area2D" type="Area2D" parent="Nivel1"]
+[node name="Puerta" type="Area2D" parent="Nivel1"]
 script = ExtResource("14_1qox3")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Nivel1/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nivel1/Puerta"]
 position = Vector2(992, 168)
 shape = SubResource("CircleShape2D_lusqc")
 
@@ -390,7 +390,7 @@ texture = ExtResource("2_5p3r4")
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="Nivel1/ParallaxBackground"]
 position = Vector2(288, -288)
 motion_scale = Vector2(0.8, 0.8)
-motion_mirroring = Vector2(479, 0)
+motion_mirroring = Vector2(704, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Nivel1/ParallaxBackground/ParallaxLayer3"]
 position = Vector2(61.375, 96)
@@ -429,18 +429,18 @@ tile_map_data = PackedByteArray("AADu/w0AAwAHAAEAAADu/w4AAwAHAAEAAADu/w8AAwAHAAE
 tile_set = SubResource("TileSet_tsyv3")
 metadata/_edit_group_ = true
 
+[node name="CanvasLayer" type="CanvasLayer" parent="Nivel1"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Nivel1/CanvasLayer"]
+position = Vector2(432, -240)
+scale = Vector2(1.62143, 1.96429)
+texture = ExtResource("1_uwnhs")
+
 [node name="Coin" parent="." instance=ExtResource("28_nkpay")]
 position = Vector2(168, -24)
 
 [node name="Coin3" parent="." instance=ExtResource("28_nkpay")]
 position = Vector2(744, -40)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(432, -240)
-scale = Vector2(1.62143, 1.96429)
-texture = ExtResource("1_uwnhs")
-
-[connection signal="body_entered" from="Nivel1/Area2D" to="Nivel1/Area2D" method="_on_body_entered"]
-[connection signal="body_exited" from="Nivel1/Area2D" to="Nivel1/Area2D" method="_on_body_exited"]
+[connection signal="body_entered" from="Nivel1/Puerta" to="Nivel1/Puerta" method="_on_body_entered"]
+[connection signal="body_exited" from="Nivel1/Puerta" to="Nivel1/Puerta" method="_on_body_exited"]
