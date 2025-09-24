@@ -15,7 +15,7 @@ func _init(s: int, v: int):
 	texture_normal = back
 
 func _ready():
-	custom_minimum_size = Vector2(100, 150)
+	custom_minimum_size = Vector2(50, 75) # Comentada o eliminada
 	stretch_mode = STRETCH_KEEP_ASPECT_CENTERED
 	self.pressed.connect(_on_pressed)
 
