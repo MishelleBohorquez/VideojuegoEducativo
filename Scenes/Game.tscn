@@ -25,25 +25,26 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 56.0
-offset_top = 96.0
-offset_right = -48.0
-offset_bottom = -24.0
+offset_left = 368.0
+offset_top = 161.0
+offset_right = 264.0
+offset_bottom = 41.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/h_separation = 0
-theme_override_constants/v_separation = 0
-columns = 4
+scale = Vector2(0.3, 0.3)
+theme_override_constants/h_separation = 1
+theme_override_constants/v_separation = 1
+columns = 8
 
 [node name="ScoreLabel" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -30.5
-offset_top = 35.0
-offset_right = 30.5
-offset_bottom = 58.0
+offset_left = -123.5
+offset_top = 20.0
+offset_right = -62.5
+offset_bottom = 43.0
 grow_horizontal = 2
 text = "Score: 0"
 
