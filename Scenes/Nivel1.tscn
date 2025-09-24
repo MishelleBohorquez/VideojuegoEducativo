@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ingkt7iy3xpj" path="res://FondoNubes/2.png" id="2_5p3r4"]
 [ext_resource type="Script" uid="uid://b5xapbe640wq" path="res://Scripts/Objetos/Puerta.tres.gd" id="2_b0apr"]
 [ext_resource type="Texture2D" uid="uid://dgo7thv125l87" path="res://Free/Terrain/PLataforma larga.png" id="2_ska4m"]
-[ext_resource type="Texture2D" uid="uid://c7qh34m4j85jt" path="res://Free/Terrain/Terrain (16x16).png" id="2_vujgx"]
+[ext_resource type="Texture2D" uid="uid://c7qh34m4j85jt" path="res://Objects/Terrain (16x16).png" id="2_vujgx"]
 [ext_resource type="Texture2D" uid="uid://ca873nqw8224v" path="res://FondoNubes/3.png" id="3_nnbnc"]
 [ext_resource type="Texture2D" uid="uid://dv0qgqr1tjop7" path="res://Free/Terrain/Piso.png" id="3_tsyv3"]
 [ext_resource type="Texture2D" uid="uid://dqt60ouriufuy" path="res://FondoNubes/4.png" id="4_18sxr"]
