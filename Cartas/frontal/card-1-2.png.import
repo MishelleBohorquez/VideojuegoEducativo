@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://iwtqkhsvjmic"
-path="res://.godot/imported/DOG.png-d4028d2ac9593343b91048fb2ddc2cb9.ctex"
+uid="uid://c7dmlqt3wddn"
+path="res://.godot/imported/card-1-2.png-a200b9b7517320af108898532f53ca1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TarjetasEnPNG/DOG.png"
-dest_files=["res://.godot/imported/DOG.png-d4028d2ac9593343b91048fb2ddc2cb9.ctex"]
+source_file="res://Cartas/frontal/card-1-2.png"
+dest_files=["res://.godot/imported/card-1-2.png-a200b9b7517320af108898532f53ca1e.ctex"]
 
 [params]
 

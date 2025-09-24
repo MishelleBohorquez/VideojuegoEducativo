@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bo6qgcjy03usp"
-path="res://.godot/imported/FISH.png-de2ae2a6c1c3ac1b61cb98cdfb97d646.ctex"
+uid="uid://cx82k4l1vmf77"
+path="res://.godot/imported/DUCK.png-648360d2e7ababa6048fe00fc0056b5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TarjetasEnPNG/FISH.png"
-dest_files=["res://.godot/imported/FISH.png-de2ae2a6c1c3ac1b61cb98cdfb97d646.ctex"]
+source_file="res://Cartas/frontal/DUCK.png"
+dest_files=["res://.godot/imported/DUCK.png-648360d2e7ababa6048fe00fc0056b5e.ctex"]
 
 [params]
 

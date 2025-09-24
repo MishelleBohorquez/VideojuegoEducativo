@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfql2w0ho1bs6"
-path="res://.godot/imported/CAT.png-7457f622ce16e9aad43537c83fd5e3da.ctex"
+uid="uid://nomwn1j527w2"
+path="res://.godot/imported/RABBIT.png-7ece3643ab6b976501fc42a1b2a3fabb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TarjetasEnPNG/CAT.png"
-dest_files=["res://.godot/imported/CAT.png-7457f622ce16e9aad43537c83fd5e3da.ctex"]
+source_file="res://Cartas/frontal/RABBIT.png"
+dest_files=["res://.godot/imported/RABBIT.png-7ece3643ab6b976501fc42a1b2a3fabb.ctex"]
 
 [params]
 

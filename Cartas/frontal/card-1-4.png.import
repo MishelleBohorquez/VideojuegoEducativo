@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yv66f7kv8kr4"
-path="res://.godot/imported/TarjeZanahoria.png-d137a15631851e8cec215aeac2aa3ab3.ctex"
+uid="uid://co03qsbtpey67"
+path="res://.godot/imported/card-1-4.png-ddd60b97da938a6a8d6f45885728e2c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TarjetasEnPNG/TarjeZanahoria.png"
-dest_files=["res://.godot/imported/TarjeZanahoria.png-d137a15631851e8cec215aeac2aa3ab3.ctex"]
+source_file="res://Cartas/frontal/card-1-4.png"
+dest_files=["res://.godot/imported/card-1-4.png-ddd60b97da938a6a8d6f45885728e2c3.ctex"]
 
 [params]
 

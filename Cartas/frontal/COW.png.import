@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfnh7b1wejfn6"
-path="res://.godot/imported/PIG.png-73dbb4915b993bb9f5eae9d8d9284397.ctex"
+uid="uid://htslltxnsjyx"
+path="res://.godot/imported/COW.png-c0f926ff02f5c2b825aba5a794f916a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TarjetasEnPNG/PIG.png"
-dest_files=["res://.godot/imported/PIG.png-73dbb4915b993bb9f5eae9d8d9284397.ctex"]
+source_file="res://Cartas/frontal/COW.png"
+dest_files=["res://.godot/imported/COW.png-c0f926ff02f5c2b825aba5a794f916a8.ctex"]
 
 [params]
 

@@ -5,20 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://f1ww7yd5s7kx" path="res://MundoTierra/middleground.png" id="2_3em8p"]
 [ext_resource type="Texture2D" uid="uid://12foa3wesyyn" path="res://MundoTierra/tileset.png" id="3_pevji"]
 [ext_resource type="Texture2D" uid="uid://c6arcdgn3te7x" path="res://sprites/Escaleras.png" id="4_2ugcq"]
-[ext_resource type="Texture2D" uid="uid://bo6qgcjy03usp" path="res://TarjetasEnPNG/FISH.png" id="5_75t03"]
-[ext_resource type="Texture2D" uid="uid://dfnh7b1wejfn6" path="res://TarjetasEnPNG/PIG.png" id="6_t58yw"]
-[ext_resource type="Texture2D" uid="uid://nomwn1j527w2" path="res://TarjetasEnPNG/RABBIT.png" id="7_px3xr"]
-[ext_resource type="Texture2D" uid="uid://yv66f7kv8kr4" path="res://TarjetasEnPNG/TarjeZanahoria.png" id="8_7gst0"]
 [ext_resource type="Texture2D" uid="uid://cx8wnjhjg1ls5" path="res://Objects/Door02.png" id="9_tci8u"]
 [ext_resource type="Texture2D" uid="uid://cn1i5pgmjwldt" path="res://Objects/hueco.png" id="10_bql13"]
 [ext_resource type="Texture2D" uid="uid://3het8lfdvwn3" path="res://MundoTierra/Plataforma largatierra.png" id="11_cdbb7"]
 [ext_resource type="Texture2D" uid="uid://s0kepvy41frf" path="res://MundoTierra/tiletierra.png" id="12_xfv8f"]
 [ext_resource type="Texture2D" uid="uid://c7qh34m4j85jt" path="res://Free/Terrain/Terrain (16x16).png" id="13_tckpg"]
-[ext_resource type="Texture2D" uid="uid://bfql2w0ho1bs6" path="res://TarjetasEnPNG/CAT.png" id="14_obmrh"]
-[ext_resource type="Texture2D" uid="uid://dmsgmb224eqs0" path="res://TarjetasEnPNG/CHICKEN.png" id="15_gf87u"]
-[ext_resource type="Texture2D" uid="uid://htslltxnsjyx" path="res://TarjetasEnPNG/COW.png" id="16_olcyj"]
-[ext_resource type="Texture2D" uid="uid://iwtqkhsvjmic" path="res://TarjetasEnPNG/DOG.png" id="17_7bdfm"]
-[ext_resource type="Texture2D" uid="uid://cx82k4l1vmf77" path="res://TarjetasEnPNG/DUCK.png" id="18_han6g"]
 [ext_resource type="Script" uid="uid://ddbcjx5j2ap08" path="res://Scripts/Objetos/puerta_salida.gd" id="19_3em8p"]
 [ext_resource type="PackedScene" uid="uid://cnb37p172gtmy" path="res://Scenes/Jugador.tscn" id="20_pevji"]
 
@@ -178,8 +169,11 @@ texture = ExtResource("4_2ugcq")
 0:16/0 = 0
 1:16/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k42pf"]
+load_path = "res://.godot/imported/FISH.png-de2ae2a6c1c3ac1b61cb98cdfb97d646.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_re0fk"]
-texture = ExtResource("5_75t03")
+texture = SubResource("CompressedTexture2D_k42pf")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -297,9 +291,12 @@ texture = ExtResource("5_75t03")
 6:12/0 = 0
 7:12/0 = 0
 8:12/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ix6gb"]
+load_path = "res://.godot/imported/PIG.png-73dbb4915b993bb9f5eae9d8d9284397.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n52ct"]
-texture = ExtResource("6_t58yw")
+texture = SubResource("CompressedTexture2D_ix6gb")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -417,9 +414,12 @@ texture = ExtResource("6_t58yw")
 6:12/0 = 0
 7:12/0 = 0
 8:12/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b2j2f"]
+load_path = "res://.godot/imported/RABBIT.png-22eb0407f70e04f81c45c1d51e5922e7.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wqj6o"]
-texture = ExtResource("7_px3xr")
+texture = SubResource("CompressedTexture2D_b2j2f")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -538,8 +538,11 @@ texture = ExtResource("7_px3xr")
 7:12/0 = 0
 8:12/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jnkmd"]
+load_path = "res://.godot/imported/TarjeZanahoria.png-d137a15631851e8cec215aeac2aa3ab3.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7nmvu"]
-texture = ExtResource("8_7gst0")
+texture = SubResource("CompressedTexture2D_jnkmd")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -857,8 +860,11 @@ texture = ExtResource("13_tckpg")
 19:10/0 = 0
 20:10/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ee1rm"]
+load_path = "res://.godot/imported/CAT.png-7457f622ce16e9aad43537c83fd5e3da.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_snq32"]
-texture = ExtResource("14_obmrh")
+texture = SubResource("CompressedTexture2D_ee1rm")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -976,9 +982,12 @@ texture = ExtResource("14_obmrh")
 6:12/0 = 0
 7:12/0 = 0
 8:12/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mstpl"]
+load_path = "res://.godot/imported/CHICKEN.png-d67f2e199ffdc2bedaee4c26e77878f9.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_htcmp"]
-texture = ExtResource("15_gf87u")
+texture = SubResource("CompressedTexture2D_mstpl")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1096,9 +1105,12 @@ texture = ExtResource("15_gf87u")
 6:12/0 = 0
 7:12/0 = 0
 8:12/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nc6pk"]
+load_path = "res://.godot/imported/COW.png-a771eff282f910410e1e427d19ee1598.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yiv20"]
-texture = ExtResource("16_olcyj")
+texture = SubResource("CompressedTexture2D_nc6pk")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1216,9 +1228,12 @@ texture = ExtResource("16_olcyj")
 6:12/0 = 0
 7:12/0 = 0
 8:12/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3em8p"]
+load_path = "res://.godot/imported/DOG.png-d4028d2ac9593343b91048fb2ddc2cb9.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u1ewu"]
-texture = ExtResource("17_7bdfm")
+texture = SubResource("CompressedTexture2D_3em8p")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1337,8 +1352,11 @@ texture = ExtResource("17_7bdfm")
 7:12/0 = 0
 8:12/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pevji"]
+load_path = "res://.godot/imported/DUCK.png-29731a4166f2717e9e62aab96a6b6026.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nk1xl"]
-texture = ExtResource("18_han6g")
+texture = SubResource("CompressedTexture2D_pevji")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0

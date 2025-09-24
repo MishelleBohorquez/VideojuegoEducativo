@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nomwn1j527w2"
-path="res://.godot/imported/RABBIT.png-22eb0407f70e04f81c45c1d51e5922e7.ctex"
+uid="uid://ce1xk4hbnd4tq"
+path="res://.godot/imported/card-1-3.png-8d9cad64c400604edc1f0d87159419bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TarjetasEnPNG/RABBIT.png"
-dest_files=["res://.godot/imported/RABBIT.png-22eb0407f70e04f81c45c1d51e5922e7.ctex"]
+source_file="res://Cartas/frontal/card-1-3.png"
+dest_files=["res://.godot/imported/card-1-3.png-8d9cad64c400604edc1f0d87159419bd.ctex"]
 
 [params]
 

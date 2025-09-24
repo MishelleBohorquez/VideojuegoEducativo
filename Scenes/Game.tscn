@@ -1,0 +1,78 @@
+[gd_scene load_steps=2 format=3 uid="uid://c57cpfhnabg86"]
+
+[ext_resource type="Script" uid="uid://bivmidbcqbsk0" path="res://Scripts/Game.gd" id="1_iukft"]
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iukft")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.512142, 0.754692, 0.959533, 1)
+
+[node name="Grid" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 56.0
+offset_top = 96.0
+offset_right = -48.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 8
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -30.5
+offset_top = 35.0
+offset_right = 30.5
+offset_bottom = 58.0
+grow_horizontal = 2
+text = "Score: 0"
+
+[node name="WinnerPanel" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="WinnerPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.5
+offset_top = -11.5
+offset_right = 34.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "WiNNER!"
+
+[node name="Button" type="Button" parent="WinnerPanel"]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 232.0
+offset_right = 341.0
+offset_bottom = 263.0
+text = "Next"
