@@ -381,53 +381,75 @@ shape = SubResource("CapsuleShape2D_5ug6r")
 [node name="ParallaxBackground" type="ParallaxBackground" parent="Nivel1"]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Nivel1/ParallaxBackground"]
+texture_repeat = 3
 position = Vector2(288, -288)
-motion_scale = Vector2(0.8, 1)
-motion_mirroring = Vector2(704, 0)
+motion_scale = Vector2(0.1, 1)
+motion_mirroring = Vector2(576, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Nivel1/ParallaxBackground/ParallaxLayer"]
-position = Vector2(63.9062, 96)
-scale = Vector2(1.22255, 1.18519)
+[node name="TextureRect" type="TextureRect" parent="Nivel1/ParallaxBackground/ParallaxLayer"]
+offset_left = -287.0
+offset_top = -97.0
+offset_right = 3713.0
+offset_bottom = 227.0
 texture = ExtResource("1_f7rsj")
+stretch_mode = 1
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Nivel1/ParallaxBackground"]
+texture_repeat = 3
 position = Vector2(288, -288)
-motion_scale = Vector2(0.8, 1)
-motion_mirroring = Vector2(704, 0)
+motion_scale = Vector2(0.2, 1)
+motion_mirroring = Vector2(576, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Nivel1/ParallaxBackground/ParallaxLayer2"]
-position = Vector2(59.375, 96)
-scale = Vector2(1.23828, 1.18519)
+[node name="TextureRect" type="TextureRect" parent="Nivel1/ParallaxBackground/ParallaxLayer2"]
+custom_minimum_size = Vector2(400, 0)
+offset_left = -288.0
+offset_top = -96.0
+offset_right = 288.0
+offset_bottom = 228.0
 texture = ExtResource("2_5p3r4")
+stretch_mode = 1
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="Nivel1/ParallaxBackground"]
+texture_repeat = 2
 position = Vector2(288, -288)
-motion_scale = Vector2(0.8, 0.8)
-motion_mirroring = Vector2(704, 0)
+motion_scale = Vector2(0.3, 0.8)
+motion_mirroring = Vector2(576, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Nivel1/ParallaxBackground/ParallaxLayer3"]
-position = Vector2(61.375, 96)
-scale = Vector2(1.23134, 1.18519)
+[node name="TextureRect" type="TextureRect" parent="Nivel1/ParallaxBackground/ParallaxLayer3"]
+offset_left = -288.0
+offset_top = -96.0
+offset_right = 3712.0
+offset_bottom = 228.0
 texture = ExtResource("3_nnbnc")
+stretch_mode = 1
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="Nivel1/ParallaxBackground"]
+texture_repeat = 2
 position = Vector2(288, -288)
-motion_scale = Vector2(0.8, 1)
-motion_mirroring = Vector2(704, 0)
+motion_scale = Vector2(0.4, 1)
+motion_mirroring = Vector2(576, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Nivel1/ParallaxBackground/ParallaxLayer4"]
-position = Vector2(64, 138.094)
-scale = Vector2(1.22222, 0.925347)
+[node name="TextureRect" type="TextureRect" parent="Nivel1/ParallaxBackground/ParallaxLayer4"]
+offset_left = -288.0
+offset_top = -32.0
+offset_right = 3712.0
+offset_bottom = 292.0
 texture = ExtResource("4_18sxr")
+stretch_mode = 1
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="Nivel1/ParallaxBackground"]
+texture_repeat = 2
 position = Vector2(288, -288)
-motion_mirroring = Vector2(704, 0)
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(576, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Nivel1/ParallaxBackground/ParallaxLayer5"]
-position = Vector2(64, 109)
-scale = Vector2(1.22222, 1.10494)
+[node name="TextureRect" type="TextureRect" parent="Nivel1/ParallaxBackground/ParallaxLayer5"]
+offset_left = -288.0
+offset_top = -64.0
+offset_right = 3712.0
+offset_bottom = 260.0
 texture = ExtResource("5_uxlvo")
+stretch_mode = 1
 
 [node name="TilemapLayers" type="Node2D" parent="Nivel1"]
 
