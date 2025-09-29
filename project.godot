@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="VideojuegoEducativo"
-run/main_scene="uid://dhutf1niljd00"
+run/main_scene="uid://bp3mn86okoopv"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/bg_color=Color(0.709685, 0.77631, 0.987135, 1)
 

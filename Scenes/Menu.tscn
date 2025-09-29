@@ -1,0 +1,110 @@
+[gd_scene load_steps=12 format=3 uid="uid://bp3mn86okoopv"]
+
+[ext_resource type="Texture2D" uid="uid://cxtc6lkq6qpje" path="res://Botones/Menu/boton_start.png" id="1_3kf3n"]
+[ext_resource type="Texture2D" uid="uid://dann4ydkjbr5r" path="res://Fondos/Menu/Fondomenu.png" id="1_6pedr"]
+[ext_resource type="Script" uid="uid://bq0x7u615c2xm" path="res://Scripts/menuprincipal.gd" id="1_ma218"]
+[ext_resource type="FontFile" uid="uid://g3g1si86wiro" path="res://Fuentes/determination.ttf" id="2_s2c3o"]
+[ext_resource type="Texture2D" uid="uid://63nedbmrxq1w" path="res://Fondos/Menu/titulowelcome.png" id="4_ma218"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_syfuq"]
+texture = ExtResource("1_6pedr")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s2c3o"]
+load_path = "res://.godot/imported/boton_start.png-286c0f642af2776428c9bd7371d1c88e.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ma218"]
+texture = SubResource("CompressedTexture2D_s2c3o")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wfhf6"]
+texture = ExtResource("1_3kf3n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6pedr"]
+texture = ExtResource("1_3kf3n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_idohh"]
+texture = ExtResource("4_ma218")
+
+[node name="Menuprincipal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ma218")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_syfuq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.494444
+anchor_right = 0.5
+anchor_bottom = 0.494444
+offset_left = -73.0
+offset_top = -38.0
+offset_right = 75.0
+offset_bottom = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 5
+
+[node name="Button1" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.200266, 0.0960448, 0.00263823, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_s2c3o")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/hover = SubResource("StyleBoxTexture_ma218")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_wfhf6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_6pedr")
+text = "START
+"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.200266, 0.0960448, 0.00263823, 1)
+theme_override_fonts/font = ExtResource("2_s2c3o")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/hover = SubResource("StyleBoxTexture_ma218")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_wfhf6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_6pedr")
+text = "OPTIONS"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.200266, 0.0960448, 0.00263823, 1)
+theme_override_fonts/font = ExtResource("2_s2c3o")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/hover = SubResource("StyleBoxTexture_ma218")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_wfhf6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_6pedr")
+text = "EXIT
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 32.0
+offset_right = 160.0
+offset_bottom = 112.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_idohh")
+
+[connection signal="pressed" from="VBoxContainer/Button1" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]

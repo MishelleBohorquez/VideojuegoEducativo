@@ -205,9 +205,9 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 72.0
-offset_top = 136.0
+offset_top = 128.0
 offset_right = 1032.0
-offset_bottom = 309.0
+offset_bottom = 328.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.3, 0.3)
@@ -249,7 +249,7 @@ offset_right = 34.5
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "WiNNER!"
+text = "WINNER!"
 
 [node name="Button" type="Button" parent="WinnerPanel"]
 layout_mode = 0
