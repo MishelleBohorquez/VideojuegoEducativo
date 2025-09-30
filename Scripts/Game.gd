@@ -15,7 +15,7 @@ func _ready():
 	GameManager.dealDeck(grid)
 
 func _on_score_updated(new_score):
-	score_label.text = "Score: " + str(new_score)
+	score_label.text = " " + str(new_score)
 
 func _on_game_won():
 	winner_panel.show()
