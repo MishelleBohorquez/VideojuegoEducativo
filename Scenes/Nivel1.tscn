@@ -21,14 +21,14 @@
 radius = 16.0
 height = 48.0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbyik"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uxlvo"]
 texture = ExtResource("6_uxlvo")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwb63"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b0apr"]
 texture = ExtResource("2_ska4m")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 5.2159, -8, -8, 8)
@@ -40,7 +40,7 @@ texture = ExtResource("2_ska4m")
 3:0/0 = 0
 3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cil57"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1qox3"]
 texture = ExtResource("3_tsyv3")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.75548, -4.13675, -8, 8, -8, -8, 8)
@@ -108,7 +108,7 @@ texture = ExtResource("3_tsyv3")
 23:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.75548, -4.13675, -8, 8, -8, -8, 8)
 23:0/0/physics_layer_0/polygon_1/points = PackedVector2Array(8, -4.31661, 4.85619, -8, -8, 8, 8, 8, 8, -3.77703)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ska4m"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ug6r"]
 texture = ExtResource("2_vujgx")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -296,7 +296,7 @@ texture = ExtResource("2_vujgx")
 19:10/0 = 0
 20:10/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b0apr"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbyik"]
 texture = ExtResource("15_b0apr")
 0:0/0 = 0
 1:0/0 = 0
@@ -309,7 +309,7 @@ texture = ExtResource("15_b0apr")
 1:2/0 = 0
 2:2/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0edta"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_82y08"]
 texture = ExtResource("5_chdfd")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -324,18 +324,18 @@ texture = ExtResource("5_chdfd")
 2:1/0 = 0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ug6r"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lusqc"]
 texture = ExtResource("12_1qox3")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_82y08"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s5hrg"]
 texture = ExtResource("13_b0apr")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lusqc"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hi137"]
 texture = ExtResource("16_1qox3")
 0:0/0 = 0
 1:0/0 = 0
@@ -349,15 +349,15 @@ texture = ExtResource("16_1qox3")
 
 [sub_resource type="TileSet" id="TileSet_tsyv3"]
 physics_layer_0/collision_layer = 1
-sources/3 = SubResource("TileSetAtlasSource_ska4m")
-sources/1 = SubResource("TileSetAtlasSource_dwb63")
-sources/2 = SubResource("TileSetAtlasSource_cil57")
-sources/5 = SubResource("TileSetAtlasSource_0edta")
-sources/0 = SubResource("TileSetAtlasSource_cbyik")
-sources/4 = SubResource("TileSetAtlasSource_b0apr")
-sources/6 = SubResource("TileSetAtlasSource_5ug6r")
-sources/7 = SubResource("TileSetAtlasSource_82y08")
-sources/8 = SubResource("TileSetAtlasSource_lusqc")
+sources/3 = SubResource("TileSetAtlasSource_5ug6r")
+sources/1 = SubResource("TileSetAtlasSource_b0apr")
+sources/2 = SubResource("TileSetAtlasSource_1qox3")
+sources/5 = SubResource("TileSetAtlasSource_82y08")
+sources/0 = SubResource("TileSetAtlasSource_uxlvo")
+sources/4 = SubResource("TileSetAtlasSource_cbyik")
+sources/6 = SubResource("TileSetAtlasSource_lusqc")
+sources/7 = SubResource("TileSetAtlasSource_s5hrg")
+sources/8 = SubResource("TileSetAtlasSource_hi137")
 
 [node name="Levels" type="Node2D"]
 position = Vector2(288, -288)
@@ -391,6 +391,7 @@ offset_right = 3713.0
 offset_bottom = 227.0
 texture = ExtResource("1_f7rsj")
 stretch_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Nivel1/ParallaxBackground"]
 texture_repeat = 3

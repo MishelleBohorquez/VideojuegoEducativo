@@ -1,16 +1,34 @@
-[gd_scene load_steps=3 format=3 uid="uid://dpxkovpq0f1ur"]
+[gd_scene load_steps=6 format=3 uid="uid://dpxkovpq0f1ur"]
 
 [ext_resource type="Script" uid="uid://bgx2j7jpc4mr5" path="res://Scripts/test_level.gd" id="1_iti4p"]
 [ext_resource type="FontFile" uid="uid://c58r6os2mypx2" path="res://Fuentes/PixelOperator.ttf" id="2_dtjkg"]
+[ext_resource type="Texture2D" uid="uid://0vidyihqpbw2" path="res://Free/Background/TestIma/ArbolesTest.png" id="2_eglq2"]
+[ext_resource type="Texture2D" uid="uid://crd66fjnald2k" path="res://Free/Background/TestIma/Letrero.png" id="3_rsyfn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rsyfn"]
 
 [node name="TestLevel" type="Node2D"]
 script = ExtResource("1_iti4p")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.677567, 0.677567, 0.677567, 1)
 offset_right = 640.0
 offset_bottom = 360.0
-mouse_filter = 2
-color = Color(0.498039, 0.772549, 1, 1)
+texture = ExtResource("2_eglq2")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect"]
+offset_left = 224.0
+offset_top = 22.0
+offset_right = 416.0
+offset_bottom = 80.0
+texture = ExtResource("3_rsyfn")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect"]
+modulate = Color(0.840326, 0.840326, 0.840325, 1)
+offset_left = 165.0
+offset_top = 88.0
+offset_right = 298.0
+offset_bottom = 215.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -22,19 +40,20 @@ offset_bottom = 47.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("2_dtjkg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_rsyfn")
 text = "WORD"
 horizontal_alignment = 1
 
 [node name="CharacterPositions" type="Node2D" parent="."]
 
 [node name="Pos1" type="Marker2D" parent="CharacterPositions"]
-position = Vector2(-106, -48)
+position = Vector2(-104, -40)
 
 [node name="Pos2" type="Marker2D" parent="CharacterPositions"]
-position = Vector2(78, -46)
+position = Vector2(80, -40)
 
 [node name="Pos3" type="Marker2D" parent="CharacterPositions"]
-position = Vector2(-106, 73)
+position = Vector2(-104, 72)
 
 [node name="Pos4" type="Marker2D" parent="CharacterPositions"]
 position = Vector2(79, 72)
