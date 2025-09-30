@@ -1,6 +1,6 @@
 res://Scenes/Game.tscn
+res://Scripts/test_level.gd
 res://Scenes/Nivel2.tscn
 res://Scenes/Nivel1.tscn
 res://Scenes/test_level.tscn
 res://Scenes/character.tscn
-res://Scripts/test_level.gd
