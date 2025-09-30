@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=4 uid="uid://d4cwad5nnif3y"]
 
-[ext_resource type="Script" uid="uid://d17mgnjco4ljj" path="res://Scenes/nivel_2.gd" id="1_2ugcq"]
+[ext_resource type="Script" uid="uid://d17mgnjco4ljj" path="res://Scripts/Niveles/nivel_2.gd" id="1_2ugcq"]
 [ext_resource type="Texture2D" uid="uid://b8kkmavp1cuhw" path="res://MundoTierra/background.png" id="1_nc6pk"]
 [ext_resource type="Texture2D" uid="uid://f1ww7yd5s7kx" path="res://MundoTierra/middleground.png" id="2_3em8p"]
 [ext_resource type="Texture2D" uid="uid://cwe51pg3iu0uf" path="res://Free/Terrain/PLataforma largatierra.png" id="7_70v5a"]
@@ -208,21 +208,27 @@ position = Vector2(288, -288)
 motion_scale = Vector2(0.6, 1)
 motion_mirroring = Vector2(668, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxMundoTierra/ParallaxLayer"]
-position = Vector2(4193.24, 736)
-scale = Vector2(3.47922, 1.6)
+[node name="TextureRect" type="TextureRect" parent="ParallaxMundoTierra/ParallaxLayer"]
+offset_left = -288.0
+offset_top = -96.0
+offset_right = 712.0
+offset_bottom = 204.0
 texture = ExtResource("1_nc6pk")
-offset = Vector2(-1192, -400)
+stretch_mode = 1
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxMundoTierra"]
 position = Vector2(280, -288)
-motion_scale = Vector2(0.8, 1)
-motion_mirroring = Vector2(672, 0)
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(662, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxMundoTierra/ParallaxLayer2"]
-position = Vector2(56, 96)
-scale = Vector2(1.75521, 1.6)
+[node name="TextureRect" type="TextureRect" parent="ParallaxMundoTierra/ParallaxLayer2"]
+offset_left = -280.0
+offset_top = -96.0
+offset_right = 1200.0
+offset_bottom = 288.0
 texture = ExtResource("2_3em8p")
+expand_mode = 1
+stretch_mode = 1
 
 [node name="PlayerStart" type="Marker2D" parent="."]
 position = Vector2(48, -136)
