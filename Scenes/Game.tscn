@@ -1,8 +1,13 @@
-[gd_scene load_steps=8 format=4 uid="uid://c57cpfhnabg86"]
+[gd_scene load_steps=11 format=4 uid="uid://c57cpfhnabg86"]
 
 [ext_resource type="Script" uid="uid://bivmidbcqbsk0" path="res://Scripts/Game.gd" id="1_iukft"]
+[ext_resource type="Texture2D" uid="uid://doukf0kgoidwi" path="res://Diseños/Titulos/Score.png" id="2_b2bpf"]
 [ext_resource type="Texture2D" uid="uid://c7qh34m4j85jt" path="res://Objects/Terrain (16x16).png" id="2_j5yw3"]
+[ext_resource type="FontFile" uid="uid://8b83v80xw7uk" path="res://Fuentes/04B_30__.TTF" id="2_kldst"]
 [ext_resource type="Texture2D" uid="uid://b7mu4xepu5uyk" path="res://Objects/Puerta.png" id="3_kldst"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7lihs"]
+texture = ExtResource("2_b2bpf")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b2bpf"]
 texture = ExtResource("2_j5yw3")
@@ -215,17 +220,28 @@ theme_override_constants/h_separation = 1
 theme_override_constants/v_separation = 1
 columns = 8
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 448.0
+offset_bottom = 88.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_7lihs")
+
 [node name="ScoreLabel" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -32.0
+offset_left = 56.0
 offset_top = 40.0
-offset_right = 29.0
-offset_bottom = 63.0
+offset_right = 96.0
+offset_bottom = 88.0
 grow_horizontal = 2
-text = "Score: 0"
+theme_override_colors/font_color = Color(0.2, 0.0941176, 0.00392157, 1)
+theme_override_fonts/font = ExtResource("2_kldst")
+theme_override_font_sizes/font_size = 41
+text = "0"
 
 [node name="WinnerPanel" type="Panel" parent="."]
 visible = false
