@@ -1,6 +1,3 @@
-res://Scenes/Jugador.tscn
-res://Scripts/Game.gd
-res://Scenes/character.tscn
 res://Scenes/Game.tscn
 res://Scenes/Menu.tscn
 res://Scenes/Nivel1.tscn
