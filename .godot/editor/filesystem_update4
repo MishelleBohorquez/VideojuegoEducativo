@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+res://Scenes/test_level.tscn
+=======
+>>>>>>> 51ffad83a45ee6dedaeae117ea97a1929bf8d360
+res://Scenes/Game.tscn
+res://Scenes/Nivel2.tscn
+res://Scenes/Nivel1.tscn
+res://Scenes/character.tscn
+res://Scripts/Game.gd
