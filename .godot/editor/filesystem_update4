@@ -3,3 +3,4 @@ res://Scenes/Game.tscn
 res://Scenes/Nivel2.tscn
 res://Scenes/Nivel1.tscn
 res://Scenes/character.tscn
+res://Scripts/Game.gd
