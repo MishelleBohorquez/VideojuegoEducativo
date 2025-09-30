@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpxkovpq0f1ur"]
+
+[ext_resource type="Script" uid="uid://bgx2j7jpc4mr5" path="res://Scripts/test_level.gd" id="1_iti4p"]
+
+[node name="TestLevel" type="Node2D"]
+script = ExtResource("1_iti4p")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 640.0
+offset_bottom = 360.0
+mouse_filter = 2
+color = Color(0.498039, 0.772549, 1, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="WordLabel" type="Label" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 24.0
+offset_bottom = 47.0
+grow_horizontal = 2
+text = "WORD"
+horizontal_alignment = 1
+
+[node name="CharacterPositions" type="Node2D" parent="."]
+
+[node name="Pos1" type="Marker2D" parent="CharacterPositions"]
+position = Vector2(-106, -48)
+
+[node name="Pos2" type="Marker2D" parent="CharacterPositions"]
+position = Vector2(78, -46)
+
+[node name="Pos3" type="Marker2D" parent="CharacterPositions"]
+position = Vector2(-106, 73)
+
+[node name="Pos4" type="Marker2D" parent="CharacterPositions"]
+position = Vector2(79, 72)
+
+[node name="FeedbackUI" type="CanvasLayer" parent="."]
+
+[node name="WinnerLabel" type="Label" parent="FeedbackUI"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.5
+offset_top = -11.5
+offset_right = 34.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 50
+text = "WINNER!"
+
+[node name="LoserLabel" type="Label" parent="FeedbackUI"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.5
+offset_top = -34.5
+offset_right = 34.5
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 50
+text = "X"
+horizontal_alignment = 1
+
+[node name="PlayAgainButton" type="Button" parent="FeedbackUI"]
+visible = false
+offset_left = 272.0
+offset_top = 232.0
+offset_right = 373.0
+offset_bottom = 263.0
+text = "PLAY AGAIN"
+
+[connection signal="pressed" from="FeedbackUI/PlayAgainButton" to="." method="_on_play_again_button_pressed"]

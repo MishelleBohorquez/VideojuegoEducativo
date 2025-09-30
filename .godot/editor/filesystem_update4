@@ -1,5 +1,6 @@
 res://Scenes/Game.tscn
 res://Scenes/Nivel2.tscn
 res://Scenes/Nivel1.tscn
-res://Scripts/Game.gd
-res://Scripts/Objetos/puerta_memoria.gd
+res://Scenes/test_level.tscn
+res://Scenes/character.tscn
+res://Scripts/test_level.gd
