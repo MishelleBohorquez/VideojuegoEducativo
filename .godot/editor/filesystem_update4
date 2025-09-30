@@ -1,0 +1,8 @@
+res://Scenes/Menu.tscn
+res://Scenes/Game.tscn
+res://Scenes/Nivel2.tscn
+res://Scenes/Nivel1.tscn
+res://default_bus_layout.tres
+res://Scripts/Audios/audio_control.gd
+res://Scripts/fullscreen_control.gd
+res://Scenes/music_manager.tscn

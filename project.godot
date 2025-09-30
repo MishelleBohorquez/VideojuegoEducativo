@@ -18,6 +18,7 @@ boot_splash/bg_color=Color(0.709685, 0.77631, 0.987135, 1)
 [autoload]
 
 GameManager="*res://Scripts/GameManager.gd"
+MusicManager="*res://Scenes/music_manager.tscn"
 
 [display]
 
@@ -25,7 +26,7 @@ window/size/viewport_width=640
 window/size/viewport_height=360
 window/size/window_width_override=1920
 window/size/window_height_override=1080
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
 window/bg_color=Color(0.14, 0.14, 0.14, 1)
 window/hdr_2d=false
 

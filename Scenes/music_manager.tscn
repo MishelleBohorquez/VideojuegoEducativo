@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cj1opqcviu5bn"]
+
+[ext_resource type="AudioStream" uid="uid://cpkypfp164iey" path="res://Sonidos/game-8-bit-399898.ogg" id="1_760hw"]
+
+[node name="MusicManager" type="Node2D"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_760hw")
+autoplay = true
+bus = &"Music"

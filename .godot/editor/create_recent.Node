@@ -1,6 +1,9 @@
-TextureRect
+AudioStreamPlayer2D
+CheckButton
+HSlider
 Label
 Panel
+TextureRect
 VBoxContainer
 Button
 CollisionShape2D
@@ -9,6 +12,3 @@ ConfirmationDialog
 TileMapLayer
 TileMap
 Node2D
-GridContainer
-ColorRect
-Marker2D
