@@ -5,8 +5,4 @@ res://Scenes/character.tscn
 res://Scenes/Nivel1.tscn
 res://Scenes/hud.tscn
 res://Scenes/Zanahoria.tscn
-res://Scenes/conejo.tscn
-res://Scripts/zanahoria.gd
 res://Scenes/Jugador.tscn
-res://Scripts/zanahoria_manger.gd
-res://Scripts/hud.gd
