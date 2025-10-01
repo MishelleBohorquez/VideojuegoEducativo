@@ -23,13 +23,6 @@ offset_right = 416.0
 offset_bottom = 80.0
 texture = ExtResource("3_rsyfn")
 
-[node name="TextureRect3" type="TextureRect" parent="TextureRect"]
-modulate = Color(0.840326, 0.840326, 0.840325, 1)
-offset_left = 165.0
-offset_top = 88.0
-offset_right = 298.0
-offset_bottom = 215.0
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="WordLabel" type="Label" parent="CanvasLayer"]

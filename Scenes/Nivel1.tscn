@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://b1bvko6s6hpf1" path="res://Free/Background/FondoNubes/5.png" id="5_uxlvo"]
 [ext_resource type="Texture2D" uid="uid://3het8lfdvwn3" path="res://MundoTierra/Plataforma largatierra.png" id="6_uxlvo"]
 [ext_resource type="Texture2D" uid="uid://b7y56isb8jsgj" path="res://MundoTierra/nopisar.png" id="12_1qox3"]
-[ext_resource type="Texture2D" uid="uid://cx8wnjhjg1ls5" path="res://Objects/Door02.png" id="13_b0apr"]
+[ext_resource type="Texture2D" path="res://Objects/Door02.png" id="13_b0apr"]
 [ext_resource type="Texture2D" uid="uid://s0kepvy41frf" path="res://MundoTierra/tiletierra.png" id="15_b0apr"]
 [ext_resource type="Texture2D" uid="uid://b7mu4xepu5uyk" path="res://Objects/Puerta.png" id="16_1qox3"]
 
