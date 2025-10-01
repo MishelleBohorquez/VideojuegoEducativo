@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://pkpbspk1hx8a"]
+
+[ext_resource type="Texture2D" uid="uid://cj4nb0lljtmtu" path="res://Objects/Zanahoria/Idle1-Sheet.png" id="1_4g857"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k3v5f"]
+atlas = ExtResource("1_4g857")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cs188"]
+atlas = ExtResource("1_4g857")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxq2n"]
+atlas = ExtResource("1_4g857")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mg5fy"]
+atlas = ExtResource("1_4g857")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5yd1"]
+atlas = ExtResource("1_4g857")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4tx1x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k3v5f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cs188")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxq2n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mg5fy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5yd1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jq61l"]
+
+[node name="Zanahoria" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4tx1x")
+autoplay = "default"
+frame_progress = 0.711178
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6)
+shape = SubResource("CircleShape2D_jq61l")

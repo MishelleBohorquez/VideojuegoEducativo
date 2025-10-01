@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk2vbcmsk284s"]
+
+[ext_resource type="Texture2D" uid="uid://cj4nb0lljtmtu" path="res://Objects/Zanahoria/Idle1-Sheet.png" id="1_e0onf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fccik"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(0, 0, 64, 64.5)
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 64.0
+offset_bottom = 64.0
+texture = SubResource("AtlasTexture_fccik")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 48.0
+offset_top = 20.0
+offset_right = 144.0
+offset_bottom = 44.0
+text = "x"
+
+[node name="ContadorZanahorias" type="Label" parent="."]
+offset_left = 72.0
+offset_top = 20.0
+offset_right = 168.0
+offset_bottom = 44.0
+text = "0"

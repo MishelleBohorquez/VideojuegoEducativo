@@ -17,6 +17,7 @@ offset_bottom = 360.0
 texture = ExtResource("2_eglq2")
 
 [node name="TextureRect2" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
 offset_left = 224.0
 offset_top = 22.0
 offset_right = 416.0
