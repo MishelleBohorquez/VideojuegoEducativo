@@ -1,12 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://bk2vbcmsk284s"]
+[gd_scene load_steps=5 format=3 uid="uid://bk2vbcmsk284s"]
 
+[ext_resource type="Script" uid="uid://bxxp5v7rbuck2" path="res://Scripts/hud.gd" id="1_bjfho"]
 [ext_resource type="Texture2D" uid="uid://cj4nb0lljtmtu" path="res://Objects/Zanahoria/Idle1-Sheet.png" id="1_e0onf"]
+[ext_resource type="FontFile" uid="uid://g3g1si86wiro" path="res://Fuentes/determination.ttf" id="2_fccik"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fccik"]
 atlas = ExtResource("1_e0onf")
 region = Rect2(0, 0, 64, 64.5)
 
 [node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_bjfho")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -16.0
@@ -20,11 +23,12 @@ offset_left = 48.0
 offset_top = 20.0
 offset_right = 144.0
 offset_bottom = 44.0
+theme_override_fonts/font = ExtResource("2_fccik")
 text = "x"
 
 [node name="ContadorZanahorias" type="Label" parent="."]
-offset_left = 72.0
+offset_left = 64.0
 offset_top = 20.0
-offset_right = 168.0
+offset_right = 160.0
 offset_bottom = 44.0
 text = "0"
