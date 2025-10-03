@@ -14,6 +14,7 @@ config/name="VideojuegoEducativo"
 run/main_scene="uid://bp3mn86okoopv"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/bg_color=Color(0.709685, 0.77631, 0.987135, 1)
+config/icon="uid://b6tn2f1hltjfy"
 
 [autoload]
 
