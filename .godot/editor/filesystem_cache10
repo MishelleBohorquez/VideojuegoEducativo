@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1759461044
+::res://::1759461485
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::430219827362966686::1759307240::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile/TextFile::-1::1759307240::0::1::::<><><>0<>0<><>::
-icon.svg::CompressedTexture2D::4602335854255807502::1759461030::1759461045::1::::<><><>0<>0<>e15d4c67f8567210fe44bccac7cfe750<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+icon.svg::CompressedTexture2D/CompressedTexture2D::4602335854255807502::1759461470::1759461485::1::::<><><>0<>0<>e15d4c67f8567210fe44bccac7cfe750<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Botones/::1759307238
 ::res://Botones/Menu/::1759324219
 boton_start.png::CompressedTexture2D/CompressedTexture2D::6426585335958602850::1759307238::1759324219::1::::<><><>0<>0<>19dd5c4bdc991b36f04e22a3ade8e474<>res://.godot/imported/boton_start.png-286c0f642af2776428c9bd7371d1c88e.ctex::
@@ -81,7 +81,7 @@ Puerta.png::CompressedTexture2D/CompressedTexture2D::4658503555963158042::175930
 Terrain (16x16).png::CompressedTexture2D/CompressedTexture2D::7052390972092690677::1759307240::1759324219::1::::<><><>0<>0<>8082a88900f38ad1b497f833055c52b2<>res://.godot/imported/Terrain (16x16).png-5a9074edec80d8506a2eeb43dd12a965.ctex::
 ::res://Objects/Zanahoria/::1759324219
 Idle1-Sheet.png::CompressedTexture2D/CompressedTexture2D::5465200352285276178::1759307240::1759324219::1::::<><><>0<>0<>2b3e48c82c602448c38bb8d24fcdc08b<>res://.godot/imported/Idle1-Sheet.png-bd542fd2227067021db9f54a1f78f901.ctex::
-::res://Scenes/::1759325408
+::res://Scenes/::1759461080
 character.tscn::PackedScene/PackedScene::6286249083743279248::1759307240::0::1::::<><><>0<>0<><>::uid://c5cdas35dahhl::::res://Scripts/character.gd
 conejo.tscn::PackedScene/PackedScene::7023117321476399368::1759307240::0::1::::<><><>0<>0<><>::uid://dgee26ucmdipn::::res://Scripts/Jugador/scriptjugador.gd<>uid://cn07blry5t1mb::::res://Free/Main Characters/Conejo/fall.png<>uid://bjdax1y4ok54::::res://Free/Main Characters/Conejo/idle.png<>uid://f7reltf3fu7h::::res://Free/Main Characters/Conejo/jump.png<>uid://uehbm4jchsle::::res://Free/Main Characters/Conejo/run.png
 Game.tscn::PackedScene/PackedScene::6944715259572282369::1759307240::0::1::::<><><>0<>0<><>::uid://bivmidbcqbsk0::::res://Scripts/Game.gd<>uid://doukf0kgoidwi::::res://Diseños/Titulos/Score.png<>uid://c7qh34m4j85jt::::res://Objects/Terrain (16x16).png<>uid://8b83v80xw7uk::::res://Fuentes/04B_30__.TTF<>uid://b7mu4xepu5uyk::::res://Objects/Puerta.png
@@ -91,14 +91,14 @@ Menu.tscn::PackedScene/PackedScene::3497809516420739675::1759307240::0::1::::<><
 music_manager.tscn::PackedScene/PackedScene::5459092450970218215::1759307240::0::1::::<><><>0<>0<><>::uid://cpkypfp164iey::::res://Sonidos/game-8-bit-399898.ogg
 Nivel1.tscn::PackedScene/PackedScene::7693035449526914991::1759307240::0::1::::<><><>0<>0<><>::uid://cnb37p172gtmy::::res://Scenes/Jugador.tscn<>uid://ek3ksmk8c57g::::res://Free/Background/FondoNubes/1.png<>uid://bk2vbcmsk284s::::res://Scenes/hud.tscn<>uid://l57sit2inugl::::res://Scripts/zanahoria_manger.gd<>uid://ingkt7iy3xpj::::res://Free/Background/FondoNubes/2.png<>uid://b5xapbe640wq::::res://Scripts/Objetos/Puerta.tres.gd<>uid://dgo7thv125l87::::res://Free/Terrain/PLataforma larga.png<>uid://c7qh34m4j85jt::::res://Objects/Terrain (16x16).png<>uid://ca873nqw8224v::::res://Free/Background/FondoNubes/3.png<>uid://dv0qgqr1tjop7::::res://Free/Terrain/Piso.png<>uid://dqt60ouriufuy::::res://Free/Background/FondoNubes/4.png<>uid://can8qu4tddyyt::::res://Free/Terrain/Plataformapiso.png<>uid://b1bvko6s6hpf1::::res://Free/Background/FondoNubes/5.png<>uid://cwe51pg3iu0uf::::res://Free/Terrain/PLataforma largatierra.png<>uid://pkpbspk1hx8a::::res://Scenes/Zanahoria.tscn<>uid://b7mu4xepu5uyk::::res://Objects/Puerta.png
 Nivel2.tscn::PackedScene/PackedScene::9200203250453761044::1759307240::0::1::::<><><>0<>0<><>::uid://d17mgnjco4ljj::::res://Scripts/Niveles/nivel_2.gd<>uid://b8kkmavp1cuhw::::res://MundoTierra/background.png<>uid://f1ww7yd5s7kx::::res://MundoTierra/middleground.png<>uid://cwe51pg3iu0uf::::res://Free/Terrain/PLataforma largatierra.png<>uid://021tiolemqvv::::res://Scripts/Objetos/puerta_memoria.gd<>uid://b7mu4xepu5uyk::::res://Objects/Puerta.png<>uid://c7qh34m4j85jt::::res://Objects/Terrain (16x16).png<>uid://cnb37p172gtmy::::res://Scenes/Jugador.tscn
-test_level.tscn::PackedScene::8260208691958518681::1759325408::0::1::::<><><>0<>0<><>::uid://bgx2j7jpc4mr5::::res://Scripts/test_level.gd<>uid://c58r6os2mypx2::::res://Fuentes/PixelOperator.ttf<>uid://0vidyihqpbw2::::res://Free/Background/TestIma/ArbolesTest.png<>uid://crd66fjnald2k::::res://Free/Background/TestIma/Letrero.png
+test_level.tscn::PackedScene::8260208691958518681::1759461080::0::1::::<><><>0<>0<><>::uid://bgx2j7jpc4mr5::::res://Scripts/test_level.gd<>uid://c58r6os2mypx2::::res://Fuentes/PixelOperator.ttf<>uid://0vidyihqpbw2::::res://Free/Background/TestIma/ArbolesTest.png<>uid://crd66fjnald2k::::res://Free/Background/TestIma/Letrero.png
 Zanahoria.tscn::PackedScene/PackedScene::1074389941878256022::1759307240::0::1::::<><><>0<>0<><>::uid://cj4nb0lljtmtu::::res://Objects/Zanahoria/Idle1-Sheet.png<>uid://dxynrss11ivtc::::res://Scripts/zanahoria.gd
 ::res://Scripts/::1759324880
 Card.gd::GDScript/GDScript::8330681426457241720::1759307240::0::1::::Card<>TextureButton<><>0<>0<><>::
 character.gd::GDScript/GDScript::6882818573055498885::1759307240::0::1::::<>Area2D<><>0<>0<><>::
 fullscreen_control.gd::GDScript/GDScript::2741212621186486051::1759307240::0::1::::<>CheckButton<><>0<>0<><>::
 Game.gd::GDScript/GDScript::2992026415124219709::1759307240::0::1::::<>Node<><>0<>0<><>::
-GameManager.gd::GDScript::1496133208726785911::1759324880::0::1::::<>Node<><>0<>0<><>::
+GameManager.gd::GDScript/GDScript::1496133208726785911::1759324880::0::1::::<>Node<><>0<>0<><>::
 hud.gd::GDScript/GDScript::4049210257618486215::1759307240::0::1::::<>CanvasLayer<><>0<>0<><>::
 menuprincipal.gd::GDScript/GDScript::3562506361569160438::1759307240::0::1::::<>Control<><>0<>0<><>::
 test_level.gd::GDScript/GDScript::2856691560150311480::1759307240::0::1::::<>Node2D<><>0<>0<><>::
