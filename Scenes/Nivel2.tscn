@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=4 uid="uid://d4cwad5nnif3y"]
+[gd_scene load_steps=15 format=4 uid="uid://d4cwad5nnif3y"]
 
 [ext_resource type="Script" uid="uid://d17mgnjco4ljj" path="res://Scripts/Niveles/nivel_2.gd" id="1_2ugcq"]
 [ext_resource type="Texture2D" uid="uid://b8kkmavp1cuhw" path="res://MundoTierra/background.png" id="1_nc6pk"]
 [ext_resource type="Texture2D" uid="uid://f1ww7yd5s7kx" path="res://MundoTierra/middleground.png" id="2_3em8p"]
 [ext_resource type="Texture2D" uid="uid://cwe51pg3iu0uf" path="res://Free/Terrain/PLataforma largatierra.png" id="7_70v5a"]
 [ext_resource type="Script" uid="uid://021tiolemqvv" path="res://Scripts/Objetos/puerta_memoria.gd" id="8_03gfn"]
+[ext_resource type="PackedScene" uid="uid://bnsanghkc0ybu" path="res://Scenes/controles_movimiento.tscn" id="9_b0ly4"]
 [ext_resource type="Texture2D" uid="uid://b7mu4xepu5uyk" path="res://Objects/Puerta.png" id="9_k42pf"]
 [ext_resource type="Texture2D" uid="uid://c7qh34m4j85jt" path="res://Objects/Terrain (16x16).png" id="13_tckpg"]
 [ext_resource type="PackedScene" uid="uid://cnb37p172gtmy" path="res://Scenes/Jugador.tscn" id="20_pevji"]
@@ -257,6 +258,8 @@ script = ExtResource("8_03gfn")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PuertaMemoria"]
 position = Vector2(1271, -168)
 shape = SubResource("CircleShape2D_pevji")
+
+[node name="ControlesMovimiento" parent="." instance=ExtResource("9_b0ly4")]
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

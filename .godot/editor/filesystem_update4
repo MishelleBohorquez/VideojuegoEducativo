@@ -1,5 +1,6 @@
-res://Scenes/test_level.tscn
 res://Scenes/Nivel1.tscn
+res://Scenes/controles_movimiento.tscn
+res://Scenes/test_level.tscn
 res://Scenes/Game.tscn
 res://Scenes/Nivel2.tscn
 res://Scripts/test_level.gd

@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://dhutf1niljd00"]
+[gd_scene load_steps=26 format=4 uid="uid://dhutf1niljd00"]
 
 [ext_resource type="PackedScene" uid="uid://cnb37p172gtmy" path="res://Scenes/Jugador.tscn" id="1_b0apr"]
 [ext_resource type="Texture2D" uid="uid://ek3ksmk8c57g" path="res://Free/Background/FondoNubes/1.png" id="1_f7rsj"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://cwe51pg3iu0uf" path="res://Free/Terrain/PLataforma largatierra.png" id="11_5p3r4"]
 [ext_resource type="PackedScene" uid="uid://pkpbspk1hx8a" path="res://Scenes/Zanahoria.tscn" id="15_18sxr"]
 [ext_resource type="Texture2D" uid="uid://b7mu4xepu5uyk" path="res://Objects/Puerta.png" id="16_1qox3"]
+[ext_resource type="PackedScene" uid="uid://bnsanghkc0ybu" path="res://Scenes/controles_movimiento.tscn" id="17_b0apr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5ug6r"]
 radius = 16.0
@@ -307,6 +308,8 @@ sources/5 = SubResource("TileSetAtlasSource_82y08")
 position = Vector2(288, -288)
 
 [node name="Nivel1" type="Node2D" parent="."]
+
+[node name="ControlesMovimiento" parent="Nivel1" instance=ExtResource("17_b0apr")]
 
 [node name="ZanahoriaManger" type="Node" parent="Nivel1"]
 unique_name_in_owner = true

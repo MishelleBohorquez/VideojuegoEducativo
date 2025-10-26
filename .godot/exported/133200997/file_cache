@@ -10,3 +10,16 @@ res://Scenes/Nivel2.tscn::b2dfc234fb40ed87c7c7f0c2829ba68b::1760710492::res://.g
 res://Scenes/test_level.tscn::6915ceca63177e9312f5793ae9f04c7b::1760710491::res://.godot/exported/133200997/export-5936d90d8502bc6fcc09f8ed7fb6e2cf-test_level.scn
 res://Scenes/Zanahoria.tscn::6a71577f491f143fd8cda1835155c509::1760326821::res://.godot/exported/133200997/export-80ae8f6b0e0427dc51730f6d0cb6b6a5-Zanahoria.scn
 res://default_bus_layout.tres::92ffa088b80f0164bbe1cb5220fb2d67::1760326821::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
+res://Scenes/character.tscn::58033db8f300b5706a1893e5aa6d9408::1761452435::res://.godot/exported/133200997/export-78ec84556dfaaee07f5c3febee60df92-character.scn
+res://Scenes/conejo.tscn::763d52fe534e7804257ad90ace484098::1761452435::res://.godot/exported/133200997/export-914d98e510fff331fe873dbfcd4f7c87-conejo.scn
+res://Scenes/Game.tscn::fb0555c4e53a15dee267f27035dfdd54::1761453550::res://.godot/exported/133200997/export-8ec1ce4394550eef6b399142f35b815f-Game.scn
+res://Scenes/hud.tscn::8501bae75946e3d4a41f5bcdd5085f15::1761452435::res://.godot/exported/133200997/export-885e17d6a23b453de5b281f1a900d8bb-hud.scn
+res://Scenes/Jugador.tscn::c077a55fda9c84cec88adcf0449cc643::1761452435::res://.godot/exported/133200997/export-89a7a7f272796268679a7ed92daa9f26-Jugador.scn
+res://Scenes/Menu.tscn::8ebabcb01b7c5b91f9084318e4b35cd7::1761452435::res://.godot/exported/133200997/export-c66ca9adccb575bddabad42984d7fed5-Menu.scn
+res://Scenes/music_manager.tscn::408035cd231437cbffea13db922f39d7::1761452435::res://.godot/exported/133200997/export-566190f203077aa46671f782c795ef82-music_manager.scn
+res://Scenes/Nivel1.tscn::e8d6c71380b5f8cc25f7c02e6ca7d570::1761453550::res://.godot/exported/133200997/export-f98209a00fd42701e2a9653be0930b2c-Nivel1.scn
+res://Scenes/Nivel2.tscn::03cb62b66ed3db10918c664a73f6fa89::1761453550::res://.godot/exported/133200997/export-31b215a28d6591d26bf28e8a29a0971f-Nivel2.scn
+res://Scenes/test_level.tscn::6915ceca63177e9312f5793ae9f04c7b::1761453550::res://.godot/exported/133200997/export-5936d90d8502bc6fcc09f8ed7fb6e2cf-test_level.scn
+res://Scenes/Zanahoria.tscn::6a71577f491f143fd8cda1835155c509::1761452435::res://.godot/exported/133200997/export-80ae8f6b0e0427dc51730f6d0cb6b6a5-Zanahoria.scn
+res://default_bus_layout.tres::92ffa088b80f0164bbe1cb5220fb2d67::1761452435::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
+res://Scenes/controles_movimiento.tscn::474cfc34ea666085f41244d3a725314d::1761453550::res://.godot/exported/133200997/export-eb9e09afb729ba3771b105013de1ad8e-controles_movimiento.scn
