@@ -20,6 +20,7 @@ config/icon="uid://b6tn2f1hltjfy"
 
 GameManager="*res://Scripts/GameManager.gd"
 MusicManager="*res://Scenes/music_manager.tscn"
+Global="*res://Scripts/Global.gd"
 
 [display]
 
