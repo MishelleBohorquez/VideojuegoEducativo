@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=4 uid="uid://c57cpfhnabg86"]
+[gd_scene load_steps=13 format=4 uid="uid://c57cpfhnabg86"]
 
 [ext_resource type="Script" uid="uid://bivmidbcqbsk0" path="res://Scripts/Game.gd" id="1_iukft"]
 [ext_resource type="Texture2D" uid="uid://doukf0kgoidwi" path="res://Diseños/Titulos/Score.png" id="2_b2bpf"]
 [ext_resource type="Texture2D" uid="uid://c7qh34m4j85jt" path="res://Objects/Terrain (16x16).png" id="2_j5yw3"]
 [ext_resource type="FontFile" uid="uid://8b83v80xw7uk" path="res://Fuentes/04B_30__.TTF" id="2_kldst"]
 [ext_resource type="Texture2D" uid="uid://b7mu4xepu5uyk" path="res://Objects/Puerta.png" id="3_kldst"]
+[ext_resource type="Texture2D" uid="uid://cyfvfb1ku56pl" path="res://Diseños/Titulos/Winner.png" id="4_7lihs"]
+[ext_resource type="Texture2D" uid="uid://ddeqc67jdvglp" path="res://Botones/next.png" id="5_fgofq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7lihs"]
 texture = ExtResource("2_b2bpf")
@@ -244,7 +246,6 @@ theme_override_font_sizes/font_size = 41
 text = "0"
 
 [node name="WinnerPanel" type="Panel" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -252,28 +253,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="WinnerPanel"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -34.5
-offset_top = -11.5
-offset_right = 34.5
-offset_bottom = 11.5
-grow_horizontal = 2
-grow_vertical = 2
-text = "WINNER!"
-
-[node name="Button" type="Button" parent="WinnerPanel"]
+[node name="WinnerImage" type="TextureRect" parent="WinnerPanel"]
 layout_mode = 0
-offset_left = 296.0
-offset_top = 232.0
-offset_right = 341.0
-offset_bottom = 263.0
-text = "Next"
+offset_left = 112.0
+offset_top = 96.0
+offset_right = 512.0
+offset_bottom = 184.0
+texture = ExtResource("4_7lihs")
+
+[node name="Button" type="TextureButton" parent="WinnerPanel"]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 208.0
+offset_right = 388.0
+offset_bottom = 286.0
+texture_normal = ExtResource("5_fgofq")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 

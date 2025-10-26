@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://dpxkovpq0f1ur"]
+[gd_scene load_steps=23 format=4 uid="uid://dpxkovpq0f1ur"]
 
 [ext_resource type="Script" uid="uid://bgx2j7jpc4mr5" path="res://Scripts/test_level.gd" id="1_iti4p"]
 [ext_resource type="Texture2D" uid="uid://b8kkmavp1cuhw" path="res://MundoTierra/background.png" id="2_7w7ni"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://f1ww7yd5s7kx" path="res://MundoTierra/middleground.png" id="3_btda1"]
 [ext_resource type="Texture2D" uid="uid://crd66fjnald2k" path="res://Free/Background/TestIma/Letrero.png" id="3_rsyfn"]
 [ext_resource type="Texture2D" uid="uid://c7qh34m4j85jt" path="res://Objects/Terrain (16x16).png" id="6_1rqgg"]
+[ext_resource type="Texture2D" uid="uid://cig5apob1msp8" path="res://Objects/x.png" id="6_mwmob"]
 [ext_resource type="Texture2D" uid="uid://dv0qgqr1tjop7" path="res://Free/Terrain/Piso.png" id="7_mwmob"]
 [ext_resource type="Texture2D" uid="uid://dgo7thv125l87" path="res://Free/Terrain/PLataforma larga.png" id="8_so54a"]
 [ext_resource type="Texture2D" uid="uid://cwe51pg3iu0uf" path="res://Free/Terrain/PLataforma largatierra.png" id="9_sw8nc"]
@@ -409,6 +410,14 @@ offset_top = 232.0
 offset_right = 373.0
 offset_bottom = 263.0
 text = "PLAY AGAIN"
+
+[node name="IncorrectoSign" type="TextureRect" parent="FeedbackUI"]
+visible = false
+offset_left = 256.0
+offset_top = 136.0
+offset_right = 384.0
+offset_bottom = 264.0
+texture = ExtResource("6_mwmob")
 
 [node name="TilemapLayers" type="Node2D" parent="."]
 

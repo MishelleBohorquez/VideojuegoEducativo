@@ -28,6 +28,7 @@ var correct_answer_name = ""
 @onready var character_positions_container = $CharacterPositions
 @onready var winner_label = $FeedbackUI/WinnerLabel
 @onready var loser_label = $FeedbackUI/LoserLabel
+@onready var incorrect_sign = $FeedbackUI/IncorrectoSign
 @onready var play_again_button = $FeedbackUI/PlayAgainButton
 
 # --- FUNCIONES DE GODOT ---
@@ -46,6 +47,7 @@ func setup_round():
 	# Limpia la UI y los personajes de la ronda anterior
 	winner_label.hide()
 	loser_label.hide()
+	incorrect_sign.hide()
 	for pos_marker in character_positions_container.get_children():
 		if pos_marker.get_child_count() > 0:
 			pos_marker.get_child(0).queue_free()
@@ -95,11 +97,13 @@ func handle_correct_answer():
 
 func handle_incorrect_answer():
 	current_opportunities -= 1
-	loser_label.show()
+	# loser_label.show() # <-- Comentamos o borramos esta línea
+	incorrect_sign.show() # <-- MOSTRAMOS TU IMAGEN PNG
 	print("Incorrecto. Oportunidades restantes: %s" % current_opportunities)
 	
 	await get_tree().create_timer(1.0).timeout
-	loser_label.hide()
+	# loser_label.hide() # <-- Comentamos o borramos esta línea
+	incorrect_sign.hide() # <-- OCULTAMOS TU IMAGEN PNG
 	
 	if current_opportunities <= 0:
 		game_over()
@@ -109,8 +113,7 @@ func game_over():
 	loser_label.show()
 	
 	await get_tree().create_timer(2.0).timeout
-	loser_label.text = "X"
-	
+	# loser_label.text = "X" # <-- Borramos esta línea
 	start_game()
 
 func game_won():
