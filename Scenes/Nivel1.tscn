@@ -349,7 +349,7 @@ motion_mirroring = Vector2(576, 0)
 offset_left = -287.0
 offset_top = -97.0
 offset_right = 3713.0
-offset_bottom = 227.0
+offset_bottom = 293.0
 texture = ExtResource("1_f7rsj")
 stretch_mode = 1
 metadata/_edit_use_anchors_ = true
@@ -379,7 +379,7 @@ motion_mirroring = Vector2(576, 0)
 offset_left = -288.0
 offset_top = -96.0
 offset_right = 3712.0
-offset_bottom = 228.0
+offset_bottom = 288.0
 texture = ExtResource("3_nnbnc")
 stretch_mode = 1
 
@@ -405,9 +405,9 @@ motion_mirroring = Vector2(576, 0)
 
 [node name="TextureRect" type="TextureRect" parent="Nivel1/ParallaxBackground/ParallaxLayer5"]
 offset_left = -288.0
-offset_top = -64.0
+offset_top = -36.0
 offset_right = 3712.0
-offset_bottom = 260.0
+offset_bottom = 288.0
 texture = ExtResource("5_uxlvo")
 stretch_mode = 1
 

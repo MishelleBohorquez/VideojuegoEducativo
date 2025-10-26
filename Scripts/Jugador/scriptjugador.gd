@@ -1,19 +1,37 @@
 extends CharacterBody2D
 
-@export var move_speed: float = 300.0  # Añade valores por defecto para pruebas rápidas
-@export var jump_speed: float = 400.0
+@export var move_speed: float = 330.0  
+@export var jump_speed: float = -350.0
 
 @onready var animated_Sprite = $SpriteAnimado
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var appeared: bool = false
+var leaved_floor: bool = false
+var had_jump: bool = false
+
+func _ready():
+	animated_Sprite.play("appear")
+	appeared = false  # El personaje aún no ha terminado de aparecer
 
 func _physics_process(delta):
+	# No procesar física hasta que termine la animación de aparecer
+	if not appeared:
+		return
+	
+	if is_on_floor():
+		leaved_floor = false
+		had_jump = false
+		
 	# 1. Aplicar gravedad
 	if not is_on_floor():
+		if not leaved_floor:
+			$coyote_timer.start()
+			leaved_floor = true
 		velocity.y += gravity * delta
 
 	# 2. Gestionar el salto
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and right_to_jump():
 		velocity.y = -jump_speed
 		
 	# 3. Gestionar el movimiento horizontal
@@ -32,12 +50,27 @@ func update_animations():
 		animated_Sprite.play("run")
 	else:
 		animated_Sprite.play("idle")
+
+func right_to_jump():
+	if is_on_floor(): 
+		had_jump = true
+		return true
+	elif not $coyote_timer.is_stopped(): 
+		had_jump = true
+		return true
 	
 func flip():
-	# Si nos movemos a la izquierda, el sprite se voltea horizontalmente.
 	if velocity.x < 0:
 		animated_Sprite.flip_h = true
-	# Si nos movemos a la derecha, vuelve a su estado original.
 	elif velocity.x > 0:
 		animated_Sprite.flip_h = false
-	# Si velocity.x es 0, no hacemos nada para que mantenga la última dirección.
+
+func _on_coyote_timer_timeout() -> void:
+	leaved_floor = false
+	print("Saltó!!")
+
+func _on_sprite_animado_animation_finished() -> void:
+	# Cuando la animación "appear" termina, permitir el juego normal
+	if animated_Sprite.animation == "appear":
+		appeared = true
+		animated_Sprite.play("idle")  # Cambiar a idle después de aparecer

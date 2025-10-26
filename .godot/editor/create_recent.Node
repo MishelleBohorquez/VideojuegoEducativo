@@ -1,3 +1,4 @@
+Timer
 TextureRect
 TextureButton
 Label
@@ -12,7 +13,3 @@ Area2D
 CanvasLayer
 TextureRect
 TileMapLayer
-ColorRect
-Button
-Marker2D
-Node2D
