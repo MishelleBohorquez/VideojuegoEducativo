@@ -11,16 +11,17 @@ config_version=5
 [application]
 
 config/name="VideojuegoEducativo"
-run/main_scene="uid://bp3mn86okoopv"
+run/main_scene="uid://708xt16pddmu"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/bg_color=Color(0.709685, 0.77631, 0.987135, 1)
 config/icon="uid://b6tn2f1hltjfy"
 
 [autoload]
 
+Global="*res://Scripts/Global.gd"
 GameManager="*res://Scripts/GameManager.gd"
 MusicManager="*res://Scenes/music_manager.tscn"
-Global="*res://Scripts/Global.gd"
+Global1="*res://Scripts/Global1.gd"
 
 [display]
 

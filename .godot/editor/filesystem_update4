@@ -3,3 +3,7 @@ res://Scenes/Jugador.tscn
 res://Scenes/Nivel1.tscn
 res://Scenes/Login.tscn
 res://Scenes/Menu.tscn
+res://Scenes/Game.tscn
+res://Scripts/test_level.gd
+res://Scripts/Global1.gd
+res://Scripts/Login.gd
