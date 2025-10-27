@@ -1,3 +1,5 @@
+PanelContainer
+Panel
 HTTPRequest
 Label
 Button
@@ -11,4 +13,3 @@ CanvasLayer
 TouchScreenButton
 Node
 CollisionShape2D
-AnimatedSprite2D

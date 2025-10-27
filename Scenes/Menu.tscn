@@ -1,15 +1,15 @@
 [gd_scene load_steps=17 format=3 uid="uid://bp3mn86okoopv"]
 
 [ext_resource type="Texture2D" uid="uid://cxtc6lkq6qpje" path="res://Botones/Menu/boton_start.png" id="1_3kf3n"]
-[ext_resource type="Texture2D" uid="uid://dann4ydkjbr5r" path="res://Fondos/Menu/Fondomenu.png" id="1_6pedr"]
 [ext_resource type="Script" uid="uid://bq0x7u615c2xm" path="res://Scripts/menuprincipal.gd" id="1_ma218"]
 [ext_resource type="FontFile" uid="uid://g3g1si86wiro" path="res://Fuentes/determination.ttf" id="2_s2c3o"]
+[ext_resource type="Texture2D" uid="uid://c8638ds3cva7c" path="res://Fondos/Login/FondoLogin.png" id="2_wfhf6"]
 [ext_resource type="Texture2D" uid="uid://63nedbmrxq1w" path="res://Fondos/Menu/titulowelcome.png" id="4_ma218"]
 [ext_resource type="Script" uid="uid://c1hded2s15nbw" path="res://Scripts/Audios/audio_control.gd" id="7_wfhf6"]
 [ext_resource type="Script" uid="uid://bfb4mvkrp6mkx" path="res://Scripts/fullscreen_control.gd" id="8_3jcrr"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_syfuq"]
-texture = ExtResource("1_6pedr")
+texture = ExtResource("2_wfhf6")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s2c3o"]
 load_path = "res://.godot/imported/boton_start.png-286c0f642af2776428c9bd7371d1c88e.ctex"

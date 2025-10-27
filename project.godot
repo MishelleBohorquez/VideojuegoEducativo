@@ -18,9 +18,9 @@ config/icon="uid://b6tn2f1hltjfy"
 
 [autoload]
 
-Global="*res://Scripts/Global.gd"
 GameManager="*res://Scripts/GameManager.gd"
 MusicManager="*res://Scenes/music_manager.tscn"
+Global="*res://Scripts/Global.gd"
 Global1="*res://Scripts/Global1.gd"
 
 [display]
@@ -28,12 +28,10 @@ Global1="*res://Scripts/Global1.gd"
 window/size/viewport_width=640
 window/size/viewport_height=360
 window/size/mode=3
-window/size/window_width_override=1920
-window/size/window_height_override=1080
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
-window/bg_color=Color(0.14, 0.14, 0.14, 1)
 window/hdr_2d=false
+window/bg_color=Color(0, 0, 0, 1)
 
 [input]
 

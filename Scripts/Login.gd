@@ -5,9 +5,9 @@ const SUPABASE_URL = "https://weucutfquntzkerlmwnv.supabase.co/"
 const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndldWN1dGZxdW50emtlcmxtd252Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0ODU4NTksImV4cCI6MjA3NzA2MTg1OX0.3jyE5VX1wZb480teqkcnea6GLcyUl8-x1DNscx81YVU"
 
 
-@onready var codigo_input = $VBoxContainer/CodigoInput
-@onready var ingresar_button = $VBoxContainer/IngresarButton
-@onready var mensaje_error = $VBoxContainer/MensajeError
+@onready var codigo_input = $PanelContainer/VBoxContainer/CodigoInput
+@onready var ingresar_button = $PanelContainer/VBoxContainer/IngresarButton
+@onready var mensaje_error = $PanelContainer/VBoxContainer/MensajeError
 @onready var api_request = $APIRequest
 
 
