@@ -273,6 +273,7 @@ radius = 9.0
 height = 32.0
 
 [node name="Jugador" type="CharacterBody2D" groups=["Player"]]
+scale = Vector2(1.2, 1.2)
 collision_layer = 16
 script = ExtResource("1_e13yb")
 

@@ -7,7 +7,7 @@
 size = Vector2(48, 5)
 
 [node name="movingPlatform_1" type="AnimatableBody2D"]
-scale = Vector2(2.5, 2.5)
+scale = Vector2(2, 2)
 script = ExtResource("1_ur37n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

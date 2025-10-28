@@ -156,7 +156,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ueyh"]
-size = Vector2(25, 32)
+size = Vector2(32, 64)
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 2
@@ -164,11 +164,11 @@ collision_layer = 2
 script = ExtResource("1_1ovkj")
 
 [node name="SpriteAnimado" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_s6mv2")
 animation = &"fall"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_5ueyh")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
