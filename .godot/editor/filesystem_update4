@@ -8,3 +8,5 @@ res://Scenes/Onjetos/movingPlatform_1.tscn
 res://Scenes/Onjetos/enemies/sierra.tscn
 res://Scenes/hud.tscn
 res://Scenes/Zanahoria.tscn
+res://Scenes/Onjetos/trampolin.tscn
+res://Scripts/Objetos/trampolin.gd

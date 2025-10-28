@@ -1,7 +1,9 @@
 CollisionShape2D
+StaticBody2D
 Area2D
-RayCast2D
 AnimatedSprite2D
+Node2D
+RayCast2D
 CharacterBody2D
 AnimationPlayer
 PathFollow2D
@@ -10,5 +12,3 @@ Sprite2D
 AnimatableBody2D
 PanelContainer
 Panel
-HTTPRequest
-Label

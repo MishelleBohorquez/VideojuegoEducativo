@@ -77,7 +77,6 @@ func flip():
 
 func _on_coyote_timer_timeout() -> void:
 	leaved_floor = false
-	print("Saltó!!")
 
 func _on_sprite_animado_animation_finished() -> void:
 	# Cuando la animación "appear" termina, permitir el juego normal
