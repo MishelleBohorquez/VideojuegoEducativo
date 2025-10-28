@@ -275,7 +275,6 @@ height = 32.0
 [node name="Jugador" type="CharacterBody2D" groups=["Player"]]
 collision_layer = 16
 script = ExtResource("1_e13yb")
-jump_speed = 350.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = 0

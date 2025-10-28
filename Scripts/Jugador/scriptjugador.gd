@@ -4,12 +4,13 @@ extends CharacterBody2D
 @export var jump_speed: float = -350.0
 
 @onready var animated_Sprite = $SpriteAnimado
+@export var max_jumps: int = 2  # Número de saltos (1 = normal, 2 = doble salto)
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var health = 100
 var appeared: bool = false
 var leaved_floor: bool = false
-var had_jump: bool = false
+var jumps_remaining: int = 0
 
 func _ready():
 	animated_Sprite.play("appear")
@@ -20,20 +21,35 @@ func _physics_process(delta):
 	if not appeared:
 		return
 	
-	if is_on_floor():
-		leaved_floor = false
-		had_jump = false
-		
-	# 1. Aplicar gravedad
 	if not is_on_floor():
 		if not leaved_floor:
 			$coyote_timer.start()
 			leaved_floor = true
 		velocity.y += gravity * delta
+	else:
+		# Si está en el suelo, resetea los saltos y el coyote time
+		leaved_floor = false
+		jumps_remaining = max_jumps # Restablece el contador de saltos
 
 	# 2. Gestionar el salto
-	if Input.is_action_just_pressed("jump") and right_to_jump():
-		velocity.y = -jump_speed
+	if Input.is_action_just_pressed("jump"):
+		# Solo puede saltar si le quedan saltos O si el coyote time está activo
+		if jumps_remaining > 0:
+			# ¡ESTA ES LA CORRECCIÓN PRINCIPAL!
+			# Usamos jump_speed directamente (-350), no -jump_speed (350).
+			velocity.y = jump_speed 
+			
+			jumps_remaining -= 1 # Gasta un salto
+			
+			# Si estabas en coyote time, gasta el salto y para el timer
+			if not $coyote_timer.is_stopped():
+				$coyote_timer.stop()
+				
+		elif not $coyote_timer.is_stopped(): # Caso especial: Coyote time
+			# El coyote time te permite usar tu primer salto
+			velocity.y = jump_speed
+			jumps_remaining = max_jumps - 1 # Gasta el primer salto, le queda 1
+			$coyote_timer.stop()
 		
 	# 3. Gestionar el movimiento horizontal
 	var input_axis = Input.get_axis("move_left", "move_right")
@@ -52,13 +68,6 @@ func update_animations():
 	else:
 		animated_Sprite.play("idle")
 
-func right_to_jump():
-	if is_on_floor(): 
-		had_jump = true
-		return true
-	elif not $coyote_timer.is_stopped(): 
-		had_jump = true
-		return true
 	
 func flip():
 	if velocity.x < 0:
