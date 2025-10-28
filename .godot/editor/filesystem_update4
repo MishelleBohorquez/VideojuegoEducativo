@@ -10,3 +10,8 @@ res://Scenes/hud.tscn
 res://Scenes/Zanahoria.tscn
 res://Scenes/Onjetos/trampolin.tscn
 res://Scripts/Objetos/trampolin.gd
+res://Scenes/Onjetos/enemies/dulce.tscn
+res://Scenes/Objetos/enemies/dulce.tscn
+res://Scripts/Objetos/Enemies/dulce.gd
+res://Scenes/Objetos/enemies/onechain.tscn
+res://Scenes/conejo.tscn

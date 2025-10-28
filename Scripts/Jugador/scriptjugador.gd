@@ -87,4 +87,4 @@ func _on_sprite_animado_animation_finished() -> void:
 
 func _on_damage_detenction_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
 	health -= 10
-	print("Daño detectado") # Replace with function body.
+	print("Daño detectado") 

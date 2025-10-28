@@ -1,8 +1,7 @@
-res://Scripts/Objetos
-res://Scenes/Onjetos
-res://Objects/Trampolin
+res://Scenes/Objetos/enemies
 res://Scripts/Objetos/Enemies
-res://Scenes/Onjetos/enemies
+res://Scripts/Objetos
+res://Objects/Trampolin
 res://Objects/Sierra
 res://Scenes
 res://Scripts
