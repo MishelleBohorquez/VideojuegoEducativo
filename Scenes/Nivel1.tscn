@@ -500,5 +500,8 @@ speed_scale = 0.4
 [node name="Trampolin" parent="." instance=ExtResource("18_cbyik")]
 position = Vector2(687, 139)
 
+[node name="Trampolin2" parent="." instance=ExtResource("18_cbyik")]
+position = Vector2(2133, 235)
+
 [connection signal="body_entered" from="Nivel1/Puerta" to="Nivel1/Puerta" method="_on_body_entered"]
 [connection signal="body_exited" from="Nivel1/Puerta" to="Nivel1/Puerta" method="_on_body_exited"]
