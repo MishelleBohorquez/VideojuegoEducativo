@@ -1,0 +1,74 @@
+[gd_scene load_steps=12 format=3 uid="uid://cxoaqb86h74jw"]
+
+[ext_resource type="Texture2D" uid="uid://ctq4c8n3irhln" path="res://Objects/Fuego/png/orange/loops/burning_loop_1.png" id="1_uoqkl"]
+[ext_resource type="Script" uid="uid://ofaxp1xhx5rv" path="res://Scenes/fuego_animado.gd" id="2_44gon"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcktu"]
+atlas = ExtResource("1_uoqkl")
+region = Rect2(0, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abnpq"]
+atlas = ExtResource("1_uoqkl")
+region = Rect2(24, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvdrk"]
+atlas = ExtResource("1_uoqkl")
+region = Rect2(48, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8nii"]
+atlas = ExtResource("1_uoqkl")
+region = Rect2(72, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gpcx"]
+atlas = ExtResource("1_uoqkl")
+region = Rect2(96, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g685v"]
+atlas = ExtResource("1_uoqkl")
+region = Rect2(120, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n41cr"]
+atlas = ExtResource("1_uoqkl")
+region = Rect2(144, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01u2y"]
+atlas = ExtResource("1_uoqkl")
+region = Rect2(168, 0, 24, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hm7yw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vcktu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abnpq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wvdrk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8nii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gpcx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g685v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n41cr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01u2y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="FuegoAnimado" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_hm7yw")
+frame = 7
+frame_progress = 0.657145
+script = ExtResource("2_44gon")

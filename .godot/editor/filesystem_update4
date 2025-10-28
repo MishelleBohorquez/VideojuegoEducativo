@@ -1,10 +1,8 @@
-res://Scenes/Jugador.tscn
-res://Scripts/Jugador/scriptjugador.gd
-res://Scenes/test_level.tscn
-res://Scenes/Nivel1.tscn
+res://Scenes/Nivel2.tscn
 res://Scenes/Login.tscn
-res://Scenes/Menu.tscn
-res://Scenes/Onjetos/movingPlatform_1.tscn
-res://Scenes/Onjetos/enemies/sierra.tscn
-res://Scenes/hud.tscn
+res://Scenes/Nivel1.tscn
+res://Scenes/fuego_animado.tscn
+res://Scenes/fuego_animado.gd
+res://Scripts/zanahoria.gd
+res://Scenes/Jugador.tscn
 res://Scenes/Zanahoria.tscn
