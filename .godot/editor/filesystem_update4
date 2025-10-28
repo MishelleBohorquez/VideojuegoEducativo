@@ -6,3 +6,5 @@ res://Scenes/fuego_animado.gd
 res://Scripts/zanahoria.gd
 res://Scenes/Jugador.tscn
 res://Scenes/Zanahoria.tscn
+res://Scripts/Jugador/scriptjugador.gd
+res://Scenes/Game.tscn
