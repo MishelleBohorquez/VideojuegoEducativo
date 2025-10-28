@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://cnb37p172gtmy"]
+[gd_scene load_steps=43 format=3 uid="uid://cnb37p172gtmy"]
 
 [ext_resource type="Script" uid="uid://dgee26ucmdipn" path="res://Scripts/Jugador/scriptjugador.gd" id="1_e13yb"]
 [ext_resource type="Texture2D" uid="uid://dcp500f8x8i82" path="res://Free/Main Characters/Conejo/appear.png" id="2_27hsy"]
@@ -265,11 +265,15 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ueyh"]
-size = Vector2(25, 32)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_27hsy"]
+size = Vector2(20, 31)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_27hsy"]
+radius = 9.0
+height = 32.0
 
 [node name="Jugador" type="CharacterBody2D" groups=["Player"]]
-collision_layer = 2
+collision_layer = 16
 script = ExtResource("1_e13yb")
 jump_speed = 350.0
 
@@ -285,8 +289,8 @@ sprite_frames = SubResource("SpriteFrames_s6mv2")
 animation = &"disappear"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(48.5, -48)
-shape = SubResource("RectangleShape2D_5ueyh")
+position = Vector2(48, -47.5)
+shape = SubResource("RectangleShape2D_27hsy")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2(48, -48)
@@ -298,5 +302,14 @@ hit_from_inside = true
 wait_time = 0.1
 one_shot = true
 
+[node name="damage_detenction" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="damage_detenction"]
+position = Vector2(49, -47)
+shape = SubResource("CapsuleShape2D_27hsy")
+
 [connection signal="animation_finished" from="SpriteAnimado" to="." method="_on_sprite_animado_animation_finished"]
 [connection signal="timeout" from="coyote_timer" to="." method="_on_coyote_timer_timeout"]
+[connection signal="area_shape_entered" from="damage_detenction" to="." method="_on_damage_detenction_area_shape_entered"]

@@ -6,6 +6,7 @@ extends CharacterBody2D
 @onready var animated_Sprite = $SpriteAnimado
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var health = 100
 var appeared: bool = false
 var leaved_floor: bool = false
 var had_jump: bool = false
@@ -74,3 +75,8 @@ func _on_sprite_animado_animation_finished() -> void:
 	if animated_Sprite.animation == "appear":
 		appeared = true
 		animated_Sprite.play("idle")  # Cambiar a idle después de aparecer
+
+
+func _on_damage_detenction_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
+	health -= 10
+	print("Daño detectado") # Replace with function body.

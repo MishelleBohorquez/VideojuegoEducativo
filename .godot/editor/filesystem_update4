@@ -5,3 +5,8 @@ res://Scenes/Jugador.tscn
 res://Scenes/Login.tscn
 res://Scenes/Menu.tscn
 res://Scenes/Onjetos/moving_platform_1.gd
+res://Scenes/Onjetos/enemies/sierra.tscn
+res://Scripts/Objetos/Enemies/sierra.gd
+res://Scripts/Jugador/scriptjugador.gd
+res://Scenes/Zanahoria.tscn
+res://Scenes/hud.tscn
