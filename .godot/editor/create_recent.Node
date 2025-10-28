@@ -1,3 +1,9 @@
+AnimationPlayer
+PathFollow2D
+Path2D
+Sprite2D
+CollisionShape2D
+AnimatableBody2D
 PanelContainer
 Panel
 HTTPRequest
@@ -7,9 +13,3 @@ LineEdit
 VBoxContainer
 Control
 Timer
-TextureRect
-TextureButton
-CanvasLayer
-TouchScreenButton
-Node
-CollisionShape2D

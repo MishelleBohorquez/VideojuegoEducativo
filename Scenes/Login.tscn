@@ -56,9 +56,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -176.5
+offset_left = -170.5
 offset_top = -92.0
-offset_right = 176.5
+offset_right = 182.5
 offset_bottom = 92.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -105,12 +105,13 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -136.0
+offset_left = -124.0
 offset_top = 16.0
-offset_right = 136.0
+offset_right = 148.0
 offset_bottom = 64.0
 grow_horizontal = 2
 theme_override_styles/normal = SubResource("StyleBoxTexture_1itim")
+metadata/_edit_group_ = true
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/IngresarButton" to="." method="_on_ingresar_button_pressed"]
 [connection signal="request_completed" from="APIRequest" to="." method="_on_api_request_request_completed"]

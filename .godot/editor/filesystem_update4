@@ -1,5 +1,7 @@
+res://Scenes/Onjetos/movingPlatform_1.tscn
+res://Scenes/Nivel1.tscn
 res://Scenes/test_level.tscn
 res://Scenes/Jugador.tscn
-res://Scenes/Nivel1.tscn
 res://Scenes/Login.tscn
 res://Scenes/Menu.tscn
+res://Scenes/Onjetos/moving_platform_1.gd
