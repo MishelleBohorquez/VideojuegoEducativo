@@ -8,6 +8,10 @@ ProgressBar
 Label
 CanvasLayer
 AnimatedSprite2D
+da4f6c098b695dbb9c9b15345b950938e053cf0e
+CollisionShape2D
+Area2D
+AnimatedSprite2D
 Label
 TextureRect
 CanvasLayer

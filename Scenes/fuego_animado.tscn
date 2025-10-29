@@ -68,7 +68,9 @@ animations = [{
 }]
 
 [node name="FuegoAnimado" type="AnimatedSprite2D"]
+position = Vector2(6, -28)
+scale = Vector2(1.5, 2.75)
 sprite_frames = SubResource("SpriteFrames_n41cr")
 autoplay = "default"
-frame_progress = 0.947214
+frame_progress = 0.468167
 script = ExtResource("2_44gon")

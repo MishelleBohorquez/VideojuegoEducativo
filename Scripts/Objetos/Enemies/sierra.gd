@@ -27,3 +27,14 @@ func _physics_process(delta):
 
 	
 	move_and_slide()
+
+
+# --- ESTA ES LA FUNCIÓN QUE DEBES REEMPLAZAR ---
+func _on_damage_zone_body_entered(body: Node2D) -> void:
+	# 1. Comprobamos si la escena actual se llama "Nivel2"
+	if get_tree().current_scene.name == "Nivel2":
+		
+		# 2. (Buena práctica) Comprobamos si el cuerpo es el jugador.
+		#    (Asegúrate de que tu jugador esté en el grupo "player")
+		if body.is_in_group("player"):
+			get_tree().reload_current_scene()

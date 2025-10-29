@@ -11,3 +11,4 @@ res://Scripts/Objetos/Puerta.tres.gd
 res://Scenes/Objetos/moving_platform_1.gd
 res://Scripts/zanahoria_manger.gd
 res://Scripts/Jugador/scriptjugador.gd
+res://Scripts/Objetos/Enemies/sierra.gd
