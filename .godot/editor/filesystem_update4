@@ -1,10 +1,13 @@
-res://Scenes/Screen/PlayerInfo.tscn
 res://Scenes/Nivel1.tscn
 res://Scenes/Objetos/enemies/dulce.tscn
 res://Scenes/Jugador.tscn
 res://Scenes/Objetos/movingPlatform_1.tscn
+res://Scenes/Screen/PlayerInfo.tscn
 res://Scenes/hud.tscn
 res://Scenes/Zanahoria.tscn
 res://Scenes/Objetos/enemies/sierra.tscn
-res://Scripts/Objetos/Playerinfo.gd
-res://Scripts/zanahoria.gd
+res://Scenes/Nivel2.tscn
+res://Scripts/Objetos/Puerta.tres.gd
+res://Scenes/Objetos/moving_platform_1.gd
+res://Scripts/zanahoria_manger.gd
+res://Scripts/Jugador/scriptjugador.gd

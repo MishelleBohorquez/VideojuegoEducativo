@@ -1,5 +1,5 @@
-res://Scripts/Objetos
 res://Scenes
+res://Scripts/Objetos
 res://Scenes/Screen
 res://Scenes/Objetos/enemies
 res://Scripts/Objetos/Enemies
@@ -7,7 +7,6 @@ res://Objects/Trampolin
 res://Objects/Sierra
 res://Objects/Fuego/png/orange/loops
 res://Scripts
-res://Scenes
 res://Objects/Zanahoria
 res://Scripts/Objetos/Enemies
 res://Objects/Sierra
@@ -21,4 +20,3 @@ res://Diseños
 res://
 C:/Users/ruddy/Documents/VideojuegoEducativo/EXE PC
 res://Scripts/Audios
-res://Scripts/Objetos

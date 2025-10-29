@@ -1,3 +1,5 @@
+CollisionShape2D
+Area2D
 TextureRect
 TextureProgressBar
 ColorRect
@@ -6,18 +8,7 @@ ProgressBar
 Label
 CanvasLayer
 AnimatedSprite2D
-CollisionShape2D
-Area2D
 Label
 TextureRect
 CanvasLayer
 Node
-RayCast2D
-CharacterBody2D
-ProgressBar
-AnimationPlayer
-Sprite2D
-Timer
-RayCast2D
-StaticBody2D
-AnimatedSprite2D

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var move_speed: float = 330.0  
+@export var move_speed: float = 350.0  
 @export var jump_speed: float = -350.0
 
 @onready var animated_Sprite = $SpriteAnimado
@@ -14,7 +14,7 @@ var jumps_remaining: int = 0
 
 func _ready():
 	animated_Sprite.play("appear")
-	appeared = false  # El personaje aún no ha terminado de aparecer
+	appeared = false  
 
 func _physics_process(delta):
 	# No procesar física hasta que termine la animación de aparecer
@@ -29,19 +29,16 @@ func _physics_process(delta):
 	else:
 		# Si está en el suelo, resetea los saltos y el coyote time
 		leaved_floor = false
-		jumps_remaining = max_jumps # Restablece el contador de saltos
+		jumps_remaining = max_jumps 
 
 	# 2. Gestionar el salto
 	if Input.is_action_just_pressed("jump"):
 		# Solo puede saltar si le quedan saltos O si el coyote time está activo
 		if jumps_remaining > 0:
-			# ¡ESTA ES LA CORRECCIÓN PRINCIPAL!
-			# Usamos jump_speed directamente (-350), no -jump_speed (350).
 			velocity.y = jump_speed 
 			
-			jumps_remaining -= 1 # Gasta un salto
+			jumps_remaining -= 1 
 			
-			# Si estabas en coyote time, gasta el salto y para el timer
 			if not $coyote_timer.is_stopped():
 				$coyote_timer.stop()
 				
@@ -79,12 +76,18 @@ func _on_coyote_timer_timeout() -> void:
 	leaved_floor = false
 
 func _on_sprite_animado_animation_finished() -> void:
-	# Cuando la animación "appear" termina, permitir el juego normal
+	
 	if animated_Sprite.animation == "appear":
 		appeared = true
-		animated_Sprite.play("idle")  # Cambiar a idle después de aparecer
+		animated_Sprite.play("idle") 
 
 
 func _on_damage_detenction_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
 	health -= 10
-	print("Daño detectado") 
+
+
+func _on_zona_mortal_body_entered(body: Node2D) -> void:
+	# Verificar si el jugador entró a la zona
+	if body.is_in_group("Player"):
+		# Si cae o entra a la zona se devuelve a la escena principal
+		get_tree().reload_current_scene()

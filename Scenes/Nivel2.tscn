@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b7mu4xepu5uyk" path="res://Objects/Puerta.png" id="9_k42pf"]
 [ext_resource type="PackedScene" uid="uid://cxoaqb86h74jw" path="res://Scenes/fuego_animado.tscn" id="13_ix6gb"]
 [ext_resource type="Texture2D" uid="uid://c7qh34m4j85jt" path="res://Objects/Terrain (16x16).png" id="13_tckpg"]
-[ext_resource type="Script" uid="uid://b6eum3lsaw83f" path="res://Scripts/zanahoria_nivel2.gd" id="14_b2j2f"]
+[ext_resource type="Script" path="res://Scripts/zanahoria_nivel2.gd" id="14_b2j2f"]
 [ext_resource type="PackedScene" uid="uid://ccnym5id32jpl" path="res://Scenes/zanahoria2.tscn" id="15_ee1rm"]
 [ext_resource type="PackedScene" uid="uid://6fgv54io0t6d" path="res://Scenes/hud_2.tscn" id="15_jnkmd"]
 [ext_resource type="PackedScene" uid="uid://cnb37p172gtmy" path="res://Scenes/Jugador.tscn" id="20_pevji"]
