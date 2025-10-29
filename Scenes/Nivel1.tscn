@@ -545,7 +545,7 @@ speed_scale = 0.656
 position = Vector2(207, 67)
 
 [node name="Dulce2" parent="Nivel1" instance=ExtResource("18_82y08")]
-position = Vector2(2576, 40)
+position = Vector2(2576, 35)
 
 [node name="Trampolin" parent="Nivel1" instance=ExtResource("18_cbyik")]
 position = Vector2(668, 139)
@@ -553,7 +553,7 @@ position = Vector2(668, 139)
 [node name="Trampolin2" parent="Nivel1" instance=ExtResource("18_cbyik")]
 position = Vector2(2161, 236)
 
-[node name="CanvasLayer" parent="." instance=ExtResource("22_lusqc")]
+[node name="PlayerInfo" parent="Nivel1" instance=ExtResource("22_lusqc")]
 
 [connection signal="body_entered" from="Nivel1/Puerta" to="Nivel1/Puerta" method="_on_body_entered"]
 [connection signal="body_exited" from="Nivel1/Puerta" to="Nivel1/Puerta" method="_on_body_exited"]

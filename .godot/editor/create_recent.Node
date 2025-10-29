@@ -1,3 +1,7 @@
+TextureRect
+TextureProgressBar
+ColorRect
+Panel
 ProgressBar
 Label
 CanvasLayer
@@ -9,7 +13,3 @@ Timer
 RayCast2D
 StaticBody2D
 AnimatedSprite2D
-Node2D
-CharacterBody2D
-PathFollow2D
-Path2D

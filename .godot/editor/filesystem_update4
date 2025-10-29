@@ -1,5 +1,9 @@
+res://Scenes/Screen/PlayerInfo.tscn
 res://Scenes/Nivel1.tscn
 res://Scenes/Objetos/enemies/dulce.tscn
 res://Scenes/Jugador.tscn
 res://Scenes/Objetos/movingPlatform_1.tscn
-res://Scenes/Screen/PlayerInfo.tscn
+res://Scenes/hud.tscn
+res://Scenes/Zanahoria.tscn
+res://Scenes/Objetos/enemies/sierra.tscn
+res://Scripts/Objetos/Playerinfo.gd
