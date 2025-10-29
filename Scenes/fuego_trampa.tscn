@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4rcv3m3v73ct"]
+
+[ext_resource type="Script" uid="uid://b6itclr25p2hp" path="res://fuego_trampa.gd" id="1_q0gbe"]
+[ext_resource type="PackedScene" uid="uid://cxoaqb86h74jw" path="res://Scenes/fuego_animado.tscn" id="2_4c8ty"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hj367"]
+size = Vector2(24, 40)
+
+[node name="FuegoTrampa" type="Area2D"]
+collision_mask = 16
+script = ExtResource("1_q0gbe")
+
+[node name="FuegoAnimado" parent="." instance=ExtResource("2_4c8ty")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, -4)
+shape = SubResource("RectangleShape2D_hj367")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

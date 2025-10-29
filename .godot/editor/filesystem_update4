@@ -8,3 +8,8 @@ res://Scripts/zanahoria_2.gd
 res://Scripts/hud_2.gd
 res://Scripts/zanahoria_nivel2.gd
 res://Scenes/fuego_animado.tscn
+res://fuego_trampa.gd
+res://Scenes/fuego_trampa.tscn
+res://Scenes/Objetos/enemies/sierra.tscn
+res://Scenes/Objetos/enemies/damage_zone.gd
+res://Scripts/Objetos/Enemies/sierra.gd
