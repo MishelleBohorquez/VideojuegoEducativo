@@ -1,9 +1,14 @@
-res://Scenes/Login.tscn
-res://Scenes/Nivel2.tscn
-res://Scenes/hud_2.tscn
-res://Scenes/zanahoria2.tscn
+res://Scenes/Screen/PlayerInfo.tscn
 res://Scenes/Nivel1.tscn
+res://Scenes/Objetos/enemies/dulce.tscn
+res://Scenes/Jugador.tscn
+res://Scenes/Objetos/movingPlatform_1.tscn
+res://Scenes/hud.tscn
+res://Scenes/Zanahoria.tscn
+res://Scenes/Objetos/enemies/sierra.tscn
+res://Scripts/Objetos/Playerinfo.gd
 res://Scripts/zanahoria.gd
+HEAD
 res://Scripts/zanahoria_2.gd
 res://Scripts/hud_2.gd
 res://Scripts/zanahoria_nivel2.gd
@@ -13,3 +18,4 @@ res://Scenes/fuego_trampa.tscn
 res://Scenes/Objetos/enemies/sierra.tscn
 res://Scenes/Objetos/enemies/damage_zone.gd
 res://Scripts/Objetos/Enemies/sierra.gd
+da4f6c098b695dbb9c9b15345b950938e053cf0e

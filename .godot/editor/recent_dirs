@@ -1,4 +1,14 @@
+HEAD
 res://Scenes
+
+res://Scripts/Objetos
+res://Scenes
+res://Scenes/Screen
+res://Scenes/Objetos/enemies
+res://Scripts/Objetos/Enemies
+res://Objects/Trampolin
+res://Objects/Sierra
+da4f6c098b695dbb9c9b15345b950938e053cf0e
 res://Objects/Fuego/png/orange/loops
 res://Scripts
 res://Objects/Zanahoria

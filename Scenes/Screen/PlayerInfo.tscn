@@ -1,10 +1,25 @@
-[gd_scene format=3 uid="uid://j02cxo0o7apf"]
+[gd_scene load_steps=5 format=3 uid="uid://j02cxo0o7apf"]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[ext_resource type="Script" uid="uid://i14oiqp3p0ii" path="res://Scripts/Objetos/Playerinfo.gd" id="1_dbg40"]
+[ext_resource type="Texture2D" uid="uid://bc3osrfvvhnhn" path="res://Diseños/Objetos/fondobarra.png" id="2_dbg40"]
+[ext_resource type="Texture2D" uid="uid://cwkiop7gu01j1" path="res://Diseños/Objetos/fondobarrafull.png" id="3_v170j"]
+[ext_resource type="Texture2D" uid="uid://bji2a3v22xcbi" path="res://Diseños/Objetos/corazon.png" id="4_tgpyp"]
 
-[node name="Label" type="Label" parent="."]
-offset_left = 104.0
-offset_top = 20.0
-offset_right = 165.0
-offset_bottom = 43.0
-text = "Vida: 90"
+[node name="PlayerInfo" type="CanvasLayer"]
+script = ExtResource("1_dbg40")
+
+[node name="health_ProgressBar" type="TextureProgressBar" parent="."]
+offset_left = 524.0
+offset_top = 15.0
+offset_right = 604.0
+offset_bottom = 31.0
+value = 25.0
+texture_under = ExtResource("2_dbg40")
+texture_progress = ExtResource("3_v170j")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 608.0
+offset_top = 14.0
+offset_right = 624.0
+offset_bottom = 30.0
+texture = ExtResource("4_tgpyp")
