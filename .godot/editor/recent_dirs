@@ -1,14 +1,9 @@
 res://Objects/Fuego/png/orange/loops
-res://Scenes
-res://Scenes/Screen
-res://Scenes/Objetos/enemies
-res://Scripts/Objetos/Enemies
-res://Scripts/Objetos
-res://Objects/Trampolin
-res://Objects/Sierra
-res://Scenes/Onjetos
-res://Scenes
 res://Scripts
+res://Scenes
+res://Objects/Zanahoria
+res://Scripts/Objetos/Enemies
+res://Objects/Sierra
 res://Free/Main Characters/Conejo
 C:/Users/MISHELLE/Documents/PruebaAndroid
 C:/Users/MISHELLE/Documents
@@ -18,5 +13,5 @@ res://Diseños
 res://Diseños
 res://
 C:/Users/ruddy/Documents/VideojuegoEducativo/EXE PC
-res://Objects/Zanahoria
 res://Scripts/Audios
+res://Scripts/Objetos
