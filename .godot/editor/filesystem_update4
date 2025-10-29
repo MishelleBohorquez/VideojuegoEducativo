@@ -7,3 +7,13 @@ res://Scenes/hud.tscn
 res://Scenes/Zanahoria.tscn
 res://Scenes/Objetos/enemies/sierra.tscn
 res://Scripts/Objetos/Playerinfo.gd
+res://Scenes/Login.tscn
+res://Scenes/Nivel2.tscn
+res://Scenes/hud_2.tscn
+res://Scenes/zanahoria2.tscn
+res://Scenes/Nivel1.tscn
+res://Scripts/zanahoria.gd
+res://Scripts/zanahoria_2.gd
+res://Scripts/hud_2.gd
+res://Scripts/zanahoria_nivel2.gd
+res://Scenes/fuego_animado.tscn
