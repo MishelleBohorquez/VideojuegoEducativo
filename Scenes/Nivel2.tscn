@@ -449,8 +449,8 @@ shape = SubResource("CircleShape2D_pevji")
 
 [node name="PuertaMemoria" type="Area2D" parent="."]
 position = Vector2(1, 0)
-collision_layer = 3
-collision_mask = 3
+collision_layer = 19
+collision_mask = 19
 script = ExtResource("8_03gfn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PuertaMemoria"]
@@ -598,7 +598,7 @@ position = Vector2(1520, -312)
 [node name="Zanahoria10" parent="." instance=ExtResource("15_ee1rm")]
 position = Vector2(1992, -232)
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="PuertaMemoria" to="PuertaMemoria" method="_on_body_entered"]
 [connection signal="body_exited" from="PuertaMemoria" to="PuertaMemoria" method="_on_body_exited"]
