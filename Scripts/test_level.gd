@@ -152,7 +152,7 @@ func game_won():
 	play_again_button.show()
 
 func _on_play_again_button_pressed():
-	start_game() # Simplemente reinicia el juego
+	get_tree().change_scene_to_file("res://Scenes/Nivel2.tscn")
 
 
 # --- 4. FUNCIONES DE SUPABASE ---
