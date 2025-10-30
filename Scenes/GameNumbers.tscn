@@ -1,0 +1,289 @@
+[gd_scene load_steps=13 format=4 uid="uid://dkueyoja8yxq"]
+
+[ext_resource type="Script" uid="uid://dmyqck62kgapk" path="res://Scripts/game_numbers.gd" id="1_nyt22"]
+[ext_resource type="Texture2D" uid="uid://doukf0kgoidwi" path="res://Diseños/Titulos/Score.png" id="2_n0ajp"]
+[ext_resource type="FontFile" uid="uid://8b83v80xw7uk" path="res://Fuentes/04B_30__.TTF" id="3_cv2pb"]
+[ext_resource type="Texture2D" uid="uid://cyfvfb1ku56pl" path="res://Diseños/Titulos/Winner.png" id="4_gtmth"]
+[ext_resource type="Texture2D" uid="uid://ddeqc67jdvglp" path="res://Botones/next.png" id="5_7i2y4"]
+[ext_resource type="Texture2D" uid="uid://c7qh34m4j85jt" path="res://Objects/Terrain (16x16).png" id="6_dxru6"]
+[ext_resource type="Texture2D" uid="uid://b7mu4xepu5uyk" path="res://Objects/Puerta.png" id="7_8fomd"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7lihs"]
+texture = ExtResource("2_n0ajp")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b2bpf"]
+texture = ExtResource("6_dxru6")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7lihs"]
+texture = ExtResource("7_8fomd")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_fgofq"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_b2bpf")
+sources/1 = SubResource("TileSetAtlasSource_7lihs")
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2irst"]
+radius = 16.0
+height = 48.0
+
+[node name="GameNumbers" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nyt22")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.84376, 0.723153, 0.013467, 1)
+
+[node name="Grid" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 88.0
+offset_top = 104.0
+offset_right = 1048.0
+offset_bottom = 304.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+theme_override_constants/h_separation = 1
+theme_override_constants/v_separation = 1
+columns = 8
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 448.0
+offset_bottom = 88.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_7lihs")
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 64.0
+offset_top = 40.0
+offset_right = 104.0
+offset_bottom = 88.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.2, 0.0941176, 0.00392157, 1)
+theme_override_fonts/font = ExtResource("3_cv2pb")
+theme_override_font_sizes/font_size = 41
+text = "0"
+
+[node name="WinnerPanel" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WinnerImage" type="TextureRect" parent="WinnerPanel"]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 96.0
+offset_right = 512.0
+offset_bottom = 184.0
+texture = ExtResource("4_gtmth")
+
+[node name="Button" type="TextureButton" parent="WinnerPanel"]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 208.0
+offset_right = 388.0
+offset_bottom = 286.0
+texture_normal = ExtResource("5_7i2y4")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="TileMapLayer"]
+tile_map_data = PackedByteArray("AAAAABQAAAAGAAAAAAAnABQAAAAIAAAAAAABABQAAAAHAAAAAAACABQAAAAHAAAAAAADABQAAAAHAAAAAAAEABQAAAAHAAAAAAAFABQAAAAHAAAAAAAGABQAAAAHAAAAAAAHABQAAAAHAAAAAAAIABQAAAAHAAAAAAAJABQAAAAHAAAAAAAKABQAAAAHAAAAAAALABQAAAAHAAAAAAAMABQAAAAHAAAAAAANABQAAAAHAAAAAAAOABQAAAAHAAAAAAAPABQAAAAHAAAAAAAQABQAAAAHAAAAAAARABQAAAAHAAAAAAASABQAAAAHAAAAAAATABQAAAAHAAAAAAAUABQAAAAHAAAAAAAVABQAAAAHAAAAAAAWABQAAAAHAAAAAAAXABQAAAAHAAAAAAAYABQAAAAHAAAAAAAZABQAAAAHAAAAAAAaABQAAAAHAAAAAAAbABQAAAAHAAAAAAAcABQAAAAHAAAAAAAdABQAAAAHAAAAAAAeABQAAAAHAAAAAAAfABQAAAAHAAAAAAAgABQAAAAHAAAAAAAhABQAAAAHAAAAAAAiABQAAAAHAAAAAAAjABQAAAAHAAAAAAAkABQAAAAHAAAAAAAlABQAAAAHAAAAAAAmABQAAAAHAAAAAAAAABUAAAAHAAEAAAAAABYAAAAHAAEAAAABABUAAAAHAAEAAAABABYAAAAHAAEAAAACABUAAAAHAAEAAAACABYAAAAHAAEAAAADABUAAAAHAAEAAAADABYAAAAHAAEAAAAEABUAAAAHAAEAAAAEABYAAAAHAAEAAAAFABUAAAAHAAEAAAAFABYAAAAHAAEAAAAGABUAAAAHAAEAAAAGABYAAAAHAAEAAAAHABUAAAAHAAEAAAAHABYAAAAHAAEAAAAIABUAAAAHAAEAAAAIABYAAAAHAAEAAAAJABUAAAAHAAEAAAAJABYAAAAHAAEAAAAKABUAAAAHAAEAAAAKABYAAAAHAAEAAAALABUAAAAHAAEAAAALABYAAAAHAAEAAAAMABUAAAAHAAEAAAAMABYAAAAHAAEAAAANABUAAAAHAAEAAAANABYAAAAHAAEAAAAOABUAAAAHAAEAAAAOABYAAAAHAAEAAAAPABUAAAAHAAEAAAAPABYAAAAHAAEAAAAQABUAAAAHAAEAAAAQABYAAAAHAAEAAAARABUAAAAHAAEAAAARABYAAAAHAAEAAAASABUAAAAHAAEAAAASABYAAAAHAAEAAAATABUAAAAHAAEAAAATABYAAAAHAAEAAAAUABUAAAAHAAEAAAAUABYAAAAHAAEAAAAVABUAAAAHAAEAAAAVABYAAAAHAAEAAAAWABUAAAAHAAEAAAAWABYAAAAHAAEAAAAXABUAAAAHAAEAAAAXABYAAAAHAAEAAAAYABUAAAAHAAEAAAAYABYAAAAHAAEAAAAZABUAAAAHAAEAAAAZABYAAAAHAAEAAAAaABUAAAAHAAEAAAAaABYAAAAHAAEAAAAbABUAAAAHAAEAAAAbABYAAAAHAAEAAAAcABUAAAAHAAEAAAAcABYAAAAHAAEAAAAdABUAAAAHAAEAAAAdABYAAAAHAAEAAAAeABUAAAAHAAEAAAAeABYAAAAHAAEAAAAfABUAAAAHAAEAAAAfABYAAAAHAAEAAAAgABUAAAAHAAEAAAAgABYAAAAHAAEAAAAhABUAAAAHAAEAAAAhABYAAAAHAAEAAAAiABUAAAAHAAEAAAAiABYAAAAHAAEAAAAjABUAAAAHAAEAAAAjABYAAAAHAAEAAAAkABUAAAAHAAEAAAAkABYAAAAHAAEAAAAlABUAAAAHAAEAAAAlABYAAAAHAAEAAAAmABUAAAAHAAEAAAAmABYAAAAHAAEAAAAnABUAAAAHAAEAAAAnABYAAAAHAAEAAAA=")
+tile_set = SubResource("TileSet_fgofq")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(72, 296)
+shape = SubResource("CapsuleShape2D_2irst")
+
+[node name="PlayerStart" type="Marker2D" parent="."]
+position = Vector2(72, 296)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

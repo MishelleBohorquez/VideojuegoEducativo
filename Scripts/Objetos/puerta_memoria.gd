@@ -16,4 +16,4 @@ func _process(_delta):
 	# Ya no es necesario preguntar "if entered == true"
 	# porque esta función solo se ejecutará cuando el jugador esté dentro.
 	if Input.is_action_just_pressed("accept"):
-		get_tree().change_scene_to_file("res://Scenes/test_level.tscn")
+		get_tree().change_scene_to_file("res://Scenes/GameFamily.tscn")

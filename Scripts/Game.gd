@@ -26,7 +26,7 @@ func _on_play_again_pressed():
 	# La acción más común aquí es reiniciar la escena actual.
 	print("El botón 'Jugar de Nuevo' fue presionado.") 
 	#get_tree().reload_current_scene()
-	get_tree().change_scene_to_file("res://Scenes/Nivel2.tscn")
+	get_tree().change_scene_to_file("res://Scenes/test_level.tscn")
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	pass # Replace with function body.
