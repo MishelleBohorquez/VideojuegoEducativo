@@ -207,7 +207,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 0.14902, 0.811765, 1)
+color = Color(0.594631, 0.634354, 0.309825, 1)
 
 [node name="Grid" type="GridContainer" parent="."]
 layout_mode = 1
@@ -238,9 +238,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 64.0
+offset_left = 32.0
 offset_top = 40.0
-offset_right = 104.0
+offset_right = 72.0
 offset_bottom = 88.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.2, 0.0941176, 0.00392157, 1)

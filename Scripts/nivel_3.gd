@@ -15,3 +15,7 @@ func _ready():
 	
 	# Y lo añadimos a la escena.
 	add_child(player)
+
+
+func _on_sierra_player_hit() -> void:
+	get_tree().reload_current_scene()

@@ -469,9 +469,6 @@ offset_bottom = 288.0
 texture = ExtResource("5_uxlvo")
 stretch_mode = 1
 
-[node name="sierra" parent="Nivel1" instance=ExtResource("17_5ug6r")]
-position = Vector2(1776, 240)
-
 [node name="TilemapLayers" type="Node2D" parent="Nivel1"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Nivel1/TilemapLayers"]
@@ -600,24 +597,26 @@ collision_mask = 16
 position = Vector2(2703.5, 294)
 shape = SubResource("RectangleShape2D_lusqc")
 
+[node name="sierra" parent="Nivel1" instance=ExtResource("17_5ug6r")]
+z_index = -1
+position = Vector2(3381, 224)
+
+[node name="sierra2" parent="Nivel1" instance=ExtResource("17_5ug6r")]
+z_index = -1
+position = Vector2(3530, 224)
+
 [node name="Trampolin" parent="." instance=ExtResource("18_cbyik")]
 position = Vector2(2711, 219)
 
 [node name="Trampolin2" parent="." instance=ExtResource("18_cbyik")]
 position = Vector2(4080, 107)
 
-[node name="sierra2" parent="." instance=ExtResource("17_5ug6r")]
-z_index = -1
-position = Vector2(3376, 224)
-rotation = 0.00793634
-
-[node name="sierra3" parent="." instance=ExtResource("17_5ug6r")]
-z_index = -1
-position = Vector2(3528, 224)
-rotation = 0.00793634
-
 [node name="Zanahoria20" parent="." instance=ExtResource("15_18sxr")]
 position = Vector2(3448, 152)
+
+[node name="sierra" parent="." instance=ExtResource("17_5ug6r")]
+z_index = -1
+position = Vector2(1765, 239)
 
 [connection signal="body_entered" from="Nivel1/Puerta" to="Nivel1/Puerta" method="_on_body_entered"]
 [connection signal="body_exited" from="Nivel1/Puerta" to="Nivel1/Puerta" method="_on_body_exited"]

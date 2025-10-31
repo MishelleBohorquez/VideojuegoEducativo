@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=4 uid="uid://xrt0ruresaiq"]
 
 [ext_resource type="Script" uid="uid://bivmidbcqbsk0" path="res://Scripts/Game.gd" id="1_n0ajp"]
-[ext_resource type="PackedScene" uid="uid://bixtyvu0wrsvr" path="res://test_levelNumbers.tscn" id="2_cv2pb"]
+[ext_resource type="PackedScene" uid="uid://bixtyvu0wrsvr" path="res://Scenes/test_levelNumbers.tscn" id="2_cv2pb"]
 [ext_resource type="Texture2D" uid="uid://doukf0kgoidwi" path="res://Diseños/Titulos/Score.png" id="2_n0ajp"]
 [ext_resource type="FontFile" uid="uid://8b83v80xw7uk" path="res://Fuentes/04B_30__.TTF" id="3_cv2pb"]
 [ext_resource type="Texture2D" uid="uid://cyfvfb1ku56pl" path="res://Diseños/Titulos/Winner.png" id="4_gtmth"]
@@ -220,7 +220,7 @@ offset_right = 1048.0
 offset_bottom = 304.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.4, 0.4)
+scale = Vector2(0.5, 0.5)
 theme_override_constants/h_separation = 1
 theme_override_constants/v_separation = 1
 columns = 8
