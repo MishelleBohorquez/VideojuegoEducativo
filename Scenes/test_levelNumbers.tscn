@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=4 uid="uid://bixtyvu0wrsvr"]
 
 [ext_resource type="Script" uid="uid://bgx2j7jpc4mr5" path="res://Scripts/test_level.gd" id="1_eidpp"]
-[ext_resource type="PackedScene" uid="uid://d4cwad5nnif3y" path="res://Scenes/Nivel2.tscn" id="2_d8ixf"]
+[ext_resource type="PackedScene" uid="uid://1ijey6uubhnf" path="res://Scenes/Nivel4.tscn" id="2_5ellm"]
 [ext_resource type="Texture2D" uid="uid://b8kkmavp1cuhw" path="res://MundoTierra/background.png" id="2_eidpp"]
 [ext_resource type="Texture2D" uid="uid://f1ww7yd5s7kx" path="res://MundoTierra/middleground.png" id="3_d8ixf"]
 [ext_resource type="FontFile" uid="uid://c58r6os2mypx2" path="res://Fuentes/PixelOperator.ttf" id="4_5ellm"]
@@ -330,7 +330,7 @@ level_data = {
 "TWO": "res://Cartas/frontal sin fondo/card-3-2.png"
 }
 level_name_for_supabase = "Test_Level"
-next_scene = ExtResource("2_d8ixf")
+next_scene = ExtResource("2_5ellm")
 metadata/_edit_horizontal_guides_ = [-16.0]
 
 [node name="TextureRect" type="TextureRect" parent="."]
