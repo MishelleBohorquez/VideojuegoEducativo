@@ -1,26 +1,19 @@
 extends Node2D
 
-# --- 1. CONSTANTES Y CONFIGURACIÓN ---
-const CHARACTER_DATA = {
-	"CAT": "res://Cartas/frontal sin fondo/card-1-1.png",
-	"CHICKEN": "res://Cartas/frontal sin fondo/card-1-2.png",
-	"COW": "res://Cartas/frontal sin fondo/card-1-3.png",
-	"DOG": "res://Cartas/frontal sin fondo/card-1-4.png",
-	"DUCK": "res://Cartas/frontal sin fondo/card-1-5.png",
-	"FISH": "res://Cartas/frontal sin fondo/card-1-6.png",
-	"PIG": "res://Cartas/frontal sin fondo/card-1-7.png",
-	"RABBIT": "res://Cartas/frontal sin fondo/card-1-8.png"
-}
+#CONSTANTES Y CONFIGURACIÓN
+@export var level_data: Dictionary = {}
+@export var level_name_for_supabase: String = "Nivel_Evaluativo"
+@export var next_scene: PackedScene
+
 const CHARACTER_SCENE = preload("res://Scenes/character.tscn")
 
-# --- 1b. CONFIGURACIÓN DE SUPABASE ---
-# ¡¡REEMPLAZA ESTO CON TUS DATOS REALES!!
+#Datos de SUPABASE
 var SUPABASE_URL = "https://weucutfquntzkerlmwnv.supabase.co"
 var SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndldWN1dGZxdW50emtlcmxtd252Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0ODU4NTksImV4cCI6MjA3NzA2MTg1OX0.3jyE5VX1wZb480teqkcnea6GLcyUl8-x1DNscx81YVU"
 var API_URL = SUPABASE_URL + "/rest/v1/puntajes"
 
 
-# --- 2. VARIABLES DEL JUEGO ---
+#  VARIABLES DEL JUEGO
 var total_rounds = 8
 var total_opportunities = 2
 const MAX_SCORE = 50.0 # Nota máxima
@@ -33,7 +26,7 @@ var current_score = 0.0
 var correct_answer_name = ""
 
 
-# --- 3. REFERENCIAS A NODOS ---
+# REFERENCIAS A NODOS
 @onready var word_label = $CanvasLayer/WordLabel
 @onready var character_positions_container = $CharacterPositions
 @onready var winner_label = $FeedbackUI/WinnerLabel
@@ -43,12 +36,12 @@ var correct_answer_name = ""
 @onready var http_request = $GuardarPuntajeRequest # Asegúrate que tu nodo se llame así
 
 
-# --- FUNCIONES DE GODOT ---
+# FUNCIONES DE GODOT
 func _ready():
 	play_again_button.pressed.connect(_on_play_again_button_pressed)
 	start_game()
 
-# --- FUNCIONES PRINCIPALES DEL JUEGO ---
+# FUNCIONES PRINCIPALES DEL JUEGO
 
 func start_game():
 	print("Iniciando nuevo juego...")
@@ -78,7 +71,7 @@ func setup_round():
 		if pos_marker.get_child_count() > 0:
 			pos_marker.get_child(0).queue_free()
 
-	var all_names = CHARACTER_DATA.keys()
+	var all_names = level_data.keys()
 	all_names.shuffle()
 	
 	correct_answer_name = all_names[0]
@@ -93,7 +86,7 @@ func setup_round():
 		if not pos_marker is Marker2D: continue
 		
 		var char_name = options[i]
-		var char_texture = CHARACTER_DATA[char_name]
+		var char_texture = level_data[char_name]
 		
 		var character = CHARACTER_SCENE.instantiate()
 		character.setup(char_name, char_texture)
@@ -138,7 +131,7 @@ func game_over():
 	loser_label.show()
 	
 	print("Juego terminado. Enviando puntaje: %s" % roundi(current_score))
-	guardar_puntaje_en_supabase(roundi(current_score), "Evaluacion_Animales")
+	guardar_puntaje_en_supabase(roundi(current_score), level_name_for_supabase)
 	
 	play_again_button.show()
 
@@ -147,15 +140,19 @@ func game_won():
 	winner_label.show()
 
 	print("Juego ganado. Enviando puntaje: %s" % roundi(current_score))
-	guardar_puntaje_en_supabase(roundi(current_score), "Evaluacion_Animales")
+	guardar_puntaje_en_supabase(roundi(current_score), level_name_for_supabase)
 
 	play_again_button.show()
 
 func _on_play_again_button_pressed():
-	get_tree().change_scene_to_file("res://Scenes/Nivel2.tscn")
+	if next_scene:
+		get_tree().change_scene_to_packed(next_scene)
+	else:
+		print("ERROR: No se ha configurado la escena 'Next Scene' en el Inspector.")
+		get_tree().change_scene_to_file("res://Scenes/MenuPrincipal.tscn")
 
 
-# --- 4. FUNCIONES DE SUPABASE ---
+# FUNCIONES DE SUPABASE
 
 func guardar_puntaje_en_supabase(puntaje: int, escena_nombre: String):
 	print("Intentando guardar puntaje en Supabase...")
@@ -167,13 +164,10 @@ func guardar_puntaje_en_supabase(puntaje: int, escena_nombre: String):
 		"Prefer: return=minimal"
 	]
 	
-	# ################################################
-	# ¡¡ESTE ES EL ÚNICO CAMBIO!!
-	# Usamos 'Global1' porque así llamaste a tu Autoload
+
 	var alumno_id_actual = Global1.alumno_actual_id
-	# ################################################
-	
-	# Una pequeña verificación para no enviar datos vacíos
+
+
 	if alumno_id_actual == 0:
 		print("ERROR: No hay un alumno logueado (ID es 0). No se puede guardar puntaje.")
 		return
@@ -188,7 +182,6 @@ func guardar_puntaje_en_supabase(puntaje: int, escena_nombre: String):
 	http_request.request(API_URL, headers, HTTPClient.METHOD_POST, body_json_string)
 
 
-# Esta función recibe la respuesta
 func _on_guardar_puntaje_request_request_completed(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray) -> void:
 	
 	if result != HTTPRequest.RESULT_SUCCESS:

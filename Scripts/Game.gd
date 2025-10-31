@@ -4,6 +4,8 @@ extends Node
 @onready var winner_panel = $WinnerPanel
 @onready var grid = $Grid
 @onready var play_again_button = $WinnerPanel/Button
+@export var level_number = 1
+@export var next_scene: PackedScene
 
 func _ready():
 	GameManager.score_updated.connect(_on_score_updated)
@@ -11,7 +13,7 @@ func _ready():
 	
 	play_again_button.pressed.connect(_on_play_again_pressed)
 
-	# La línea clave que inicia todo
+	GameManager.fillDeck(level_number)
 	GameManager.dealDeck(grid)
 
 func _on_score_updated(new_score):
@@ -22,11 +24,12 @@ func _on_game_won():
 
 # --- FUNCIÓN QUE FALTABA ---
 func _on_play_again_pressed():
-	# Esta función se ejecutará cuando el jugador presione el botón.
-	# La acción más común aquí es reiniciar la escena actual.
-	print("El botón 'Jugar de Nuevo' fue presionado.") 
-	#get_tree().reload_current_scene()
-	get_tree().change_scene_to_file("res://Scenes/test_level.tscn")
+	if next_scene:
+		get_tree().change_scene_to_packed(next_scene)
+	else:
+		print("ERROR: No se configuró 'Next Scene' en el Inspector.")
+		# Como fallback, podemos recargar la escena actual
+		get_tree().reload_current_scene()
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	pass # Replace with function body.

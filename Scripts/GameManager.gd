@@ -17,16 +17,17 @@ var pairs_found = 0
 var total_pairs = 8
 
 func _ready():
-	fillDeck()
+	pass
 
-func fillDeck():
+func fillDeck(level_id: int):
 	deck.clear()
 	pairs_found = 0
 	score = 0
 	emit_signal("score_updated", score)
 	for i in range(1, total_pairs + 1):
-		deck.append(Card.new(1, i))
-		deck.append(Card.new(1, i))
+		deck.append(Card.new(level_id, i))
+		deck.append(Card.new(level_id, i))
+	
 
 func dealDeck(grid_node: GridContainer):
 	if not grid_node:

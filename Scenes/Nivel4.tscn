@@ -1,6 +1,6 @@
-[gd_scene load_steps=23 format=4 uid="uid://co0jcxtdr3d3h"]
+[gd_scene load_steps=23 format=4 uid="uid://1ijey6uubhnf"]
 
-[ext_resource type="Script" uid="uid://pryx86cob4q8" path="res://Scripts/nivel_4.gd" id="1_r1ub7"]
+[ext_resource type="Script" path="res://Scripts/nivel_4.gd" id="1_r1ub7"]
 [ext_resource type="PackedScene" uid="uid://cnb37p172gtmy" path="res://Scenes/Jugador.tscn" id="2_d4gs6"]
 [ext_resource type="Texture2D" uid="uid://b8kkmavp1cuhw" path="res://MundoTierra/background.png" id="3_d7w2p"]
 [ext_resource type="Texture2D" uid="uid://f1ww7yd5s7kx" path="res://MundoTierra/middleground.png" id="4_m4268"]
@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cwe51pg3iu0uf" path="res://Free/Terrain/PLataforma largatierra.png" id="7_lnyn3"]
 [ext_resource type="Texture2D" uid="uid://dhb81q6q51oxu" path="res://MundoTierra/Water+.png" id="8_dl75m"]
 [ext_resource type="Texture2D" uid="uid://1jpi48a4yrks" path="res://Objects/Antorcha.png" id="9_1g3od"]
-[ext_resource type="Script" uid="uid://ci7hjg7utiwti" path="res://Scripts/puerta_memoriaNumbers.gd" id="10_qtxmx"]
+[ext_resource type="Script" path="res://Scripts/puerta_memoriaNumbers.gd" id="10_qtxmx"]
 [ext_resource type="PackedScene" uid="uid://bnsanghkc0ybu" path="res://Scenes/controles_movimiento.tscn" id="11_aoiwe"]
 [ext_resource type="PackedScene" uid="uid://b4rcv3m3v73ct" path="res://Scenes/fuego_trampa.tscn" id="12_gqka6"]
 [ext_resource type="Script" uid="uid://b6eum3lsaw83f" path="res://Scripts/zanahoria_nivel2.gd" id="13_aqtsx"]

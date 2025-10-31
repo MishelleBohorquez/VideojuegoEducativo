@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=4 uid="uid://dkueyoja8yxq"]
+[gd_scene load_steps=14 format=4 uid="uid://xrt0ruresaiq"]
 
-[ext_resource type="Script" uid="uid://dmyqck62kgapk" path="res://Scripts/game_numbers.gd" id="1_nyt22"]
+[ext_resource type="Script" uid="uid://bivmidbcqbsk0" path="res://Scripts/Game.gd" id="1_n0ajp"]
+[ext_resource type="PackedScene" uid="uid://bixtyvu0wrsvr" path="res://Botones/test_levelNumbers.tscn" id="2_cv2pb"]
 [ext_resource type="Texture2D" uid="uid://doukf0kgoidwi" path="res://Diseños/Titulos/Score.png" id="2_n0ajp"]
 [ext_resource type="FontFile" uid="uid://8b83v80xw7uk" path="res://Fuentes/04B_30__.TTF" id="3_cv2pb"]
 [ext_resource type="Texture2D" uid="uid://cyfvfb1ku56pl" path="res://Diseños/Titulos/Winner.png" id="4_gtmth"]
@@ -188,14 +189,16 @@ sources/1 = SubResource("TileSetAtlasSource_7lihs")
 radius = 16.0
 height = 48.0
 
-[node name="GameNumbers" type="Control"]
+[node name="Game" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_nyt22")
+script = ExtResource("1_n0ajp")
+level_number = 3
+next_scene = ExtResource("2_cv2pb")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -204,7 +207,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.84376, 0.723153, 0.013467, 1)
+color = Color(0.810314, 0.663698, 0.877967, 1)
 
 [node name="Grid" type="GridContainer" parent="."]
 layout_mode = 1
