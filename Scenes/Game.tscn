@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=4 uid="uid://c57cpfhnabg86"]
 
 [ext_resource type="Script" uid="uid://bivmidbcqbsk0" path="res://Scripts/Game.gd" id="1_iukft"]
-[ext_resource type="PackedScene" uid="uid://dpxkovpq0f1ur" path="res://Botones/test_level.tscn" id="2_2irst"]
+[ext_resource type="PackedScene" uid="uid://dpxkovpq0f1ur" path="res://test_level.tscn" id="2_2irst"]
 [ext_resource type="Texture2D" uid="uid://doukf0kgoidwi" path="res://Diseños/Titulos/Score.png" id="2_b2bpf"]
 [ext_resource type="Texture2D" uid="uid://c7qh34m4j85jt" path="res://Objects/Terrain (16x16).png" id="2_j5yw3"]
 [ext_resource type="FontFile" uid="uid://8b83v80xw7uk" path="res://Fuentes/04B_30__.TTF" id="2_kldst"]

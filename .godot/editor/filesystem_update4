@@ -14,4 +14,5 @@ res://Botones/test_level.tscn
 res://Botones/test_levelNumbers.tscn
 res://Scenes/music_manager.tscn
 res://Scenes/Jugador.tscn
-res://Scripts/Jugador/scriptjugador.gd
+res://test_level.tscn
+res://test_levelNumbers.tscn
