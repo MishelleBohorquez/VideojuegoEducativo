@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=4 uid="uid://bixtyvu0wrsvr"]
 
 [ext_resource type="Script" uid="uid://bgx2j7jpc4mr5" path="res://Scripts/test_level.gd" id="1_eidpp"]
-[ext_resource type="PackedScene" uid="uid://1ijey6uubhnf" path="res://Scenes/Nivel4.tscn" id="2_5ellm"]
+[ext_resource type="PackedScene" uid="uid://bp3mn86okoopv" path="res://Scenes/Menu.tscn" id="2_5ellm"]
 [ext_resource type="Texture2D" uid="uid://b8kkmavp1cuhw" path="res://MundoTierra/background.png" id="2_eidpp"]
 [ext_resource type="Texture2D" uid="uid://f1ww7yd5s7kx" path="res://MundoTierra/middleground.png" id="3_d8ixf"]
 [ext_resource type="FontFile" uid="uid://c58r6os2mypx2" path="res://Fuentes/PixelOperator.ttf" id="4_5ellm"]
@@ -404,13 +404,13 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 50
-text = "WINNER!"
 
 [node name="WinnerImage" type="TextureRect" parent="FeedbackUI/WinnerLabel"]
+visible = false
 layout_mode = 0
-offset_left = -61.5
+offset_left = -37.5
 offset_top = -1.5
-offset_right = 338.5
+offset_right = 362.5
 offset_bottom = 86.5
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_el6lt")
@@ -430,7 +430,6 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 50
-text = "X"
 horizontal_alignment = 1
 
 [node name="PlayAgainButton" type="Button" parent="FeedbackUI"]
