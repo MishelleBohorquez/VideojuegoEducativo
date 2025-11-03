@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqx1newg2a782"
-path="res://.godot/imported/BotonSaltar.png-7dc573c5ad63554fe40cd5b5b5dfce31.ctex"
+uid="uid://dy4yctd7wlimg"
+path="res://.godot/imported/BotonEntrarOpr.png-581bf951381bb4d7f32d83726169b357.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Botones/BotonesMovimiento/BotonSaltar.png"
-dest_files=["res://.godot/imported/BotonSaltar.png-7dc573c5ad63554fe40cd5b5b5dfce31.ctex"]
+source_file="res://Botones/BotonesMovimiento/SeOprime/BotonEntrarOpr.png"
+dest_files=["res://.godot/imported/BotonEntrarOpr.png-581bf951381bb4d7f32d83726169b357.ctex"]
 
 [params]
 

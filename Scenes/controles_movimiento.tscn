@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://c5u427oj58l70" path="res://Botones/BotonesMovimiento/SeOprime/BotonDerOpr.png" id="2_rdjdw"]
 [ext_resource type="Texture2D" uid="uid://b1growngm8g47" path="res://Botones/BotonesMovimiento/BotonIzq.png" id="3_3mxs5"]
 [ext_resource type="Texture2D" uid="uid://bc2tbitl7vbdb" path="res://Botones/BotonesMovimiento/SeOprime/BotonIzqOpr.png" id="4_3yxh4"]
-[ext_resource type="Texture2D" uid="uid://cqx1newg2a782" path="res://Botones/BotonesMovimiento/BotonSaltar.png" id="5_gdomx"]
-[ext_resource type="Texture2D" uid="uid://dy4yctd7wlimg" path="res://Botones/BotonesMovimiento/SeOprime/BotonSaltOpr.png" id="6_wogqk"]
+[ext_resource type="Texture2D" uid="uid://cqx1newg2a782" path="res://Botones/BotonesMovimiento/BotonEntrar.png" id="6_ao2px"]
+[ext_resource type="Texture2D" uid="uid://dy4yctd7wlimg" path="res://Botones/BotonesMovimiento/SeOprime/BotonEntrarOpr.png" id="7_6pm4f"]
 [ext_resource type="Texture2D" uid="uid://dppl70fdcv0mt" path="res://Botones/BotonesMovimiento/BotonArriba.png" id="7_8sxo4"]
 
 [node name="ControlesMovimiento" type="CanvasLayer"]
@@ -27,12 +27,12 @@ action = "move_left"
 [node name="BotonSaltar" type="TouchScreenButton" parent="."]
 position = Vector2(655, 280)
 scale = Vector2(2, 2)
-texture_normal = ExtResource("5_gdomx")
-texture_pressed = ExtResource("6_wogqk")
+texture_normal = ExtResource("7_8sxo4")
 action = "jump"
 
 [node name="BotonEntrar" type="TouchScreenButton" parent="."]
 position = Vector2(727, 248)
 scale = Vector2(2, 2)
-texture_normal = ExtResource("7_8sxo4")
+texture_normal = ExtResource("6_ao2px")
+texture_pressed = ExtResource("7_6pm4f")
 action = "accept"
