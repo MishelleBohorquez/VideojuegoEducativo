@@ -1,10 +1,12 @@
+# Script de jugador, aquí se ajusta funcionalidades de movimiento, de escenas y conexionaes
+
 extends CharacterBody2D
 
 @export var move_speed: float = 210.0  
 @export var jump_speed: float = -350.0
 
 @onready var animated_Sprite = $SpriteAnimado
-@export var max_jumps: int = 2  # Número de saltos (1 = normal, 2 = doble salto)
+@export var max_jumps: int = 2  
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var health = 100
@@ -17,7 +19,6 @@ func _ready():
 	appeared = false  
 
 func _physics_process(delta):
-	# No procesar física hasta que termine la animación de aparecer
 	if not appeared:
 		return
 	
@@ -27,13 +28,10 @@ func _physics_process(delta):
 			leaved_floor = true
 		velocity.y += gravity * delta
 	else:
-		# Si está en el suelo, resetea los saltos y el coyote time
 		leaved_floor = false
 		jumps_remaining = max_jumps 
 
-	# 2. Gestionar el salto
 	if Input.is_action_just_pressed("jump"):
-		# Solo puede saltar si le quedan saltos O si el coyote time está activo
 		if jumps_remaining > 0:
 			velocity.y = jump_speed 
 			
@@ -42,21 +40,19 @@ func _physics_process(delta):
 			if not $coyote_timer.is_stopped():
 				$coyote_timer.stop()
 				
-		elif not $coyote_timer.is_stopped(): # Caso especial: Coyote time
-			# El coyote time te permite usar tu primer salto
+		elif not $coyote_timer.is_stopped(): 
 			velocity.y = jump_speed
-			jumps_remaining = max_jumps - 1 # Gasta el primer salto, le queda 1
+			jumps_remaining = max_jumps - 1 
 			$coyote_timer.stop()
 		
-	# 3. Gestionar el movimiento horizontal
+	# Movimiento horizontal
 	var input_axis = Input.get_axis("move_left", "move_right")
 	velocity.x = input_axis * move_speed
 	
-	# 4. Actualizar animaciones y dirección del sprite
+	# Actualizar animaciones y dirección del sprite
 	update_animations()
 	flip()
 	
-	# 5. Aplicar el movimiento final
 	move_and_slide()
 
 func update_animations():
@@ -87,7 +83,5 @@ func _on_damage_detenction_area_shape_entered(area_rid: RID, area: Area2D, area_
 
 
 func _on_zona_mortal_body_entered(body: Node2D) -> void:
-	# Verificar si el jugador entró a la zona
 	if body.is_in_group("Player"):
-		# Si cae o entra a la zona se devuelve a la escena principal
 		get_tree().reload_current_scene()

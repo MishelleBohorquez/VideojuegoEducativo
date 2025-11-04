@@ -1,9 +1,9 @@
+#Script para generar daño al tocal el fuego
 extends AnimatedSprite2D
 
-# Called when the node enters the scene tree for the first time.
+# Inicia la escena del fuego
 func _ready():
-	play() # <-- ¡Esta es la línea que agregaste!
+	play() 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass

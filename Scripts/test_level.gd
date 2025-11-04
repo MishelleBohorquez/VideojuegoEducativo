@@ -34,39 +34,31 @@ var correct_answer_name = ""
 @onready var incorrect_sign = $FeedbackUI/IncorrectoSign
 @onready var play_again_button = $FeedbackUI/PlayAgainButton
 @onready var http_request = $GuardarPuntajeRequest # Asegúrate que tu nodo se llame así
-
-
-# FUNCIONES DE GODOT
+#Script de test de evaluación de animales
 func _ready():
 	play_again_button.pressed.connect(_on_play_again_button_pressed)
 	start_game()
 
-# FUNCIONES PRINCIPALES DEL JUEGO
 
 func start_game():
 	print("Iniciando nuevo juego...")
 	
-	# Resetea todas las variables de la partida
 	current_round = 1
 	current_score = 0.0
 	current_opportunities_left = total_opportunities # Vidas globales
 	
-	# Oculta toda la UI de fin de juego
 	play_again_button.hide()
 	winner_label.hide()
 	loser_label.hide()
 	incorrect_sign.hide()
 	
-	# Prepara la primera ronda
 	setup_round()
 
 func setup_round():
-	# Limpia la UI de feedback
 	winner_label.hide()
 	loser_label.hide()
 	incorrect_sign.hide()
 	
-	# Limpia los personajes de la ronda anterior
 	for pos_marker in character_positions_container.get_children():
 		if pos_marker.get_child_count() > 0:
 			pos_marker.get_child(0).queue_free()
@@ -80,7 +72,6 @@ func setup_round():
 	
 	word_label.text = correct_answer_name
 	
-	# Crea y posiciona los 4 personajes
 	var i = 0
 	for pos_marker in character_positions_container.get_children():
 		if not pos_marker is Marker2D: continue
@@ -95,7 +86,6 @@ func setup_round():
 		pos_marker.add_child(character)
 		i += 1
 
-# --- FUNCIONES DE RESPUESTA (HANDLERS) ---
 func _on_character_selected(selected_name):
 	if selected_name == correct_answer_name:
 		handle_correct_answer()
@@ -152,7 +142,6 @@ func _on_play_again_button_pressed():
 		get_tree().change_scene_to_file("res://Scenes/MenuPrincipal.tscn")
 
 
-# FUNCIONES DE SUPABASE
 
 func guardar_puntaje_en_supabase(puntaje: int, escena_nombre: String):
 	print("Intentando guardar puntaje en Supabase...")

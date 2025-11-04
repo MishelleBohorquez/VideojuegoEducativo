@@ -1,4 +1,4 @@
-# Card.gd
+# Funcionamiento de las cartas
 extends TextureButton
 class_name Card
 

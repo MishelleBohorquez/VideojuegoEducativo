@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://r46n1468daeg"]
+[gd_scene load_steps=37 format=4 uid="uid://r46n1468daeg"]
 
 [ext_resource type="Script" uid="uid://7lve1wunkm0x" path="res://Scripts/nivel_3.gd" id="1_m4jcs"]
 [ext_resource type="PackedScene" uid="uid://cnb37p172gtmy" path="res://Scenes/Jugador.tscn" id="2_8b2gy"]
@@ -874,6 +874,20 @@ sources/7 = SubResource("TileSetAtlasSource_tfe0g")
 [sub_resource type="CircleShape2D" id="CircleShape2D_pevji"]
 radius = 23.0
 
+[sub_resource type="GDScript" id="GDScript_pc5uu"]
+script/source = "extends CanvasLayer
+
+@onready var contador_zanahorias2: Label = $ContadorZanahoria2
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	var zanahoria_nivel2 = get_node(\"%ZanahoriaNivel2\")
+	zanahoria_nivel2.puntuacion_actualizada.connect(_on_puntuacion_actualizada)
+
+func _on_puntuacion_actualizada(puntuacion_actual:int) -> void:
+	contador_zanahorias2.text = str(puntuacion_actual)
+"
+
 [node name="Nivel3" type="Node2D"]
 script = ExtResource("1_m4jcs")
 player_scene = ExtResource("2_8b2gy")
@@ -1015,6 +1029,7 @@ offset_bottom = 55.0
 text = "0"
 
 [node name="HUD2" parent="." instance=ExtResource("14_tfe0g")]
+script = SubResource("GDScript_pc5uu")
 
 [node name="Zanahoria2" parent="." instance=ExtResource("15_fsyr2")]
 position = Vector2(352, -176)

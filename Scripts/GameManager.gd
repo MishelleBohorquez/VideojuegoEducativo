@@ -1,11 +1,10 @@
-# GameManager.gd
+# Script para el control de los juegos de memoria
 extends Node
 
 signal score_updated(new_score)
 signal game_won
 
-# Vuelve a verificar esta ruta por última vez.
-# Si moviste el archivo a la carpeta 'reversa', esta es la ruta correcta:
+
 var card_back = preload("res://Cartas/reversa/TarjeZanahoria.png")
 
 var deck = []

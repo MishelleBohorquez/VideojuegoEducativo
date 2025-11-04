@@ -1,3 +1,4 @@
+# Script para la animación y el salto del jugador en el trampolín
 extends Node2D
 
 

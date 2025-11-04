@@ -1,3 +1,4 @@
+#Script Menú de Inicio del juego
 extends Control
 
 @onready var botones_menu: VBoxContainer = $BotonesMenu

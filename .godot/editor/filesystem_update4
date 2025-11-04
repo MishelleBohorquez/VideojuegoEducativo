@@ -1,1 +1,13 @@
-res://Scenes/controles_movimiento.tscn
+res://Scenes/hud_2.tscn
+res://Scripts/Login.gd
+res://Scripts/menuprincipal.gd
+res://Scripts/music_player.gd
+res://Scripts/nivel_3.gd
+res://Scripts/nivel_4.gd
+res://Scripts/hud_2.gd
+res://Scripts/hud.gd
+res://Scripts/puerta_memoriaFamily.gd
+res://Scripts/puerta_memoriaNumbers.gd
+res://fuego_trampa.gd
+res://Scripts/test_level.gd
+res://Scenes/Nivel2.tscn

@@ -1,3 +1,4 @@
+# Script para el juego de memoria 1 de animales
 extends Node
 
 @onready var score_label = $ScoreLabel
@@ -22,18 +23,16 @@ func _on_score_updated(new_score):
 func _on_game_won():
 	winner_panel.show()
 
-# --- FUNCIÓN QUE FALTABA ---
 func _on_play_again_pressed():
 	if next_scene:
 		get_tree().change_scene_to_packed(next_scene)
 	else:
 		print("ERROR: No se configuró 'Next Scene' en el Inspector.")
-		# Como fallback, podemos recargar la escena actual
 		get_tree().reload_current_scene()
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	pass # Replace with function body.
+	pass 
 
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
-	pass # Replace with function body.
+	pass 

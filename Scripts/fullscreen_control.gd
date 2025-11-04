@@ -1,3 +1,4 @@
+# Script de prueba para habilitar la pantalla completa
 extends CheckButton
 
 

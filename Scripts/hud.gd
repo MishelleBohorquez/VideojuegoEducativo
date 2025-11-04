@@ -2,7 +2,6 @@ extends CanvasLayer
 
 @onready var contador_zanahorias: Label = $ContadorZanahorias
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var zanahoria_manager = get_node("%ZanahoriaManger")
 	zanahoria_manager.puntuacion_actualizada.connect(_on_puntuacion_actualizada)

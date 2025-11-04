@@ -1,8 +1,9 @@
+# Script para configuración del dulce, este es un objeto que hiere al jugador
 extends Node2D
 
 var floorDetected = false
 var safeTimeOut = false
-var raycastInitValue = 27 #Pixeles de la cadena con el dulce (0,27)
+var raycastInitValue = 27 
 
 func _ready():
 	$raycast_floor_detection.target_position.y = raycastInitValue
@@ -21,7 +22,7 @@ func _process(delta):
 func init_dulce():
 	var numberOfChains = ($raycast_floor_detection.target_position.y - raycastInitValue) / 6
 	$Dulce.position.y += (numberOfChains * 6)
-	#Duplicar las mini cadenas
+	#Este bucle es para que con los pixeles de distancia al suelo duplique la cadena del dulces
 	for i in range(numberOfChains):
 		var newRing = preload("res://Scenes/Objetos/enemies/onechain.tscn").instantiate()
 		newRing.position = Vector2(0,(6*(i+1)))

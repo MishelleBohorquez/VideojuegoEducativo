@@ -1,17 +1,15 @@
+#Script para el nivel 2 de plataforma
 extends Node2D
 
-# Esta variable quedará vacía en el script para que la llenes desde el editor.
+# Se habilita para que desde la interfaz se pueda la escena de conexión
 @export var player_scene: PackedScene
 
 func _ready():
-	# Instanciamos la escena que asignaste en el Inspector.
+	#Configuración de posición del jugador en la escena
 	var player = player_scene.instantiate()
 	
-	# Buscamos la posición del marcador.
 	var start_position = $PlayerStart.position
 	
-	# Colocamos al jugador en su sitio.
 	player.position = start_position
 	
-	# Y lo añadimos a la escena.
 	add_child(player)

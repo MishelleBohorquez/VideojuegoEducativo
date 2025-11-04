@@ -1,3 +1,4 @@
+# Script Música de fondo
 extends AudioStreamPlayer2D
 
 func _ready():
