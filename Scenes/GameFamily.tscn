@@ -229,7 +229,7 @@ columns = 8
 layout_mode = 0
 offset_left = 192.0
 offset_top = 32.0
-offset_right = 496.0
+offset_right = 512.0
 offset_bottom = 88.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_7lihs")
 
@@ -259,17 +259,17 @@ grow_vertical = 2
 
 [node name="WinnerImage" type="TextureRect" parent="WinnerPanel"]
 layout_mode = 0
-offset_left = 120.0
+offset_left = 184.0
 offset_top = 96.0
-offset_right = 520.0
+offset_right = 584.0
 offset_bottom = 184.0
 texture = ExtResource("4_agqos")
 
 [node name="Button" type="TextureButton" parent="WinnerPanel"]
 layout_mode = 0
-offset_left = 248.0
+offset_left = 312.0
 offset_top = 208.0
-offset_right = 388.0
+offset_right = 452.0
 offset_bottom = 286.0
 texture_normal = ExtResource("5_jasqu")
 

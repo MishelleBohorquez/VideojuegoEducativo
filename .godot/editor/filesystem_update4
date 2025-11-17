@@ -1,0 +1,16 @@
+res://Scenes/Login.tscn
+res://Scenes/Nivel3.tscn
+res://Scenes/Game.tscn
+res://Scenes/test_level.tscn
+res://Scripts/test_level.gd
+res://Scenes/test_levelFamily.tscn
+res://Scenes/GameFamily.tscn
+res://Scenes/Nivel2.tscn
+res://Scripts/puerta_memoriaFamily.gd
+res://Scenes/GameColors.tscn
+res://Scenes/Nivel4.tscn
+res://Scenes/Jugador.tscn
+res://Scripts/Objetos/puerta_memoriaFamily.gd
+res://Scenes/test_levelColors.tscn
+res://Scenes/GameNumbers.tscn
+res://Scenes/test_levelNumbers.tscn

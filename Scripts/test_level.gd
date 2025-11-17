@@ -126,7 +126,7 @@ func game_over():
 	play_again_button.show()
 
 func game_won():
-	winner_label.text = "WINNER!"
+	winner_label.text = " "
 	winner_label.show()
 
 	print("Juego ganado. Enviando puntaje: %s" % roundi(current_score))
