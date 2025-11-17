@@ -24,10 +24,10 @@ res://Scenes/fuego_trampa.tscn::7297dfa51ae928de34b5985a6133a41d::1763403741::re
 res://Scenes/GameFamily.tscn::a210bcc6fc0607fe431a0796be21612a::1763408993::res://.godot/exported/133200997/export-7ce3777f304f064c7fe09c038685aa10-GameFamily.scn
 res://Scenes/Nivel3.tscn::46fdf83601401c3fe1f16146d49abef1::1763408993::res://.godot/exported/133200997/export-4f9778dced5947198c5060337ce56a67-Nivel3.scn
 res://Scenes/Nivel4.tscn::36581694a8e821489c8b3b7886dc9182::1763408993::res://.godot/exported/133200997/export-276910bd09219e607a99d22ef55161a0-Nivel4.scn
-res://Scenes/GameNumbers.tscn::7f95c4a95e3d42bab7f9895f78fa0f8f::1763408994::res://.godot/exported/133200997/export-806cd76c39372d779c7fd5c181f56e8e-GameNumbers.scn
+res://Scenes/GameNumbers.tscn::bd00e65e2abf3ae9e34d8b59358e28f5::1763409374::res://.godot/exported/133200997/export-806cd76c39372d779c7fd5c181f56e8e-GameNumbers.scn
 res://Scenes/GameColors.tscn::c02950070e7c8a6011d295cb5bb852bd::1763408993::res://.godot/exported/133200997/export-f5df82bbb55947ee24646813e6b165fa-GameColors.scn
-res://Scenes/test_levelColors.tscn::1fea376f574a34881c0946522a3c84bb::1763408994::res://.godot/exported/133200997/export-8e737168d22b6cd25740038bfc81c3fc-test_levelColors.scn
+res://Scenes/test_levelColors.tscn::9dd31e9e3f7ad80225a4af65176f4385::1763409578::res://.godot/exported/133200997/export-8e737168d22b6cd25740038bfc81c3fc-test_levelColors.scn
 res://Scenes/test_levelFamily.tscn::901c0fa35dc303de2edbf610f778b801::1763408993::res://.godot/exported/133200997/export-45fe50653ad74f53999e9b2c4e45ab08-test_levelFamily.scn
-res://Scenes/test_level.tscn::152d980effda243bef4020ea658ca6f1::1763408993::res://.godot/exported/133200997/export-5936d90d8502bc6fcc09f8ed7fb6e2cf-test_level.scn
-res://Scenes/test_levelNumbers.tscn::b5553fe8ead7340378f7010e3172dd77::1763408994::res://.godot/exported/133200997/export-c18b701dec3c44252db7ada51c1e7ae0-test_levelNumbers.scn
+res://Scenes/test_level.tscn::3e7ae3a099c55d6a0af356386de6fa33::1763409117::res://.godot/exported/133200997/export-5936d90d8502bc6fcc09f8ed7fb6e2cf-test_level.scn
+res://Scenes/test_levelNumbers.tscn::1cd6864fa07969c9c83c3ef33883d8e8::1763409579::res://.godot/exported/133200997/export-c18b701dec3c44252db7ada51c1e7ae0-test_levelNumbers.scn
 res://Scenes/zona_mortal.tscn::a01509e29f5f523336f98ac7b5daf382::1763403741::res://.godot/exported/133200997/export-eaedd3d74c573307eea4deaecc5ed93c-zona_mortal.scn
