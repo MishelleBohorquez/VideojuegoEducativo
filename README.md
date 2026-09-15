@@ -1,6 +1,5 @@
 <div align="center">
-  <img src="./logo/ICON.png">
-  <img src="https://via.placeholder.com/600x200/FFB6C1/FFFFFF?text=🎮+Videojuego+Educativo+de+Inglés" alt="Banner del Proyecto" width="100%">
+  <img src="./logo/ICON.png" alt="Banner del Proyecto" width="100%">
 
   <h1>🌟 Videojuego Educativo - Escuela Nueva 🌟</h1>
   <p><em>Aprendizaje de inglés interactivo para niños de entornos rurales</em></p>
