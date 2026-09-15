@@ -1,5 +1,5 @@
 <div align="center">
-  <!-- Aquí puedes poner un banner o imagen de tu juego -->
+  <img src="./logo/ICON.png">
   <img src="https://via.placeholder.com/600x200/FFB6C1/FFFFFF?text=🎮+Videojuego+Educativo+de+Inglés" alt="Banner del Proyecto" width="100%">
 
   <h1>🌟 Videojuego Educativo - Escuela Nueva 🌟</h1>
@@ -55,8 +55,6 @@ Además del juego, el ecosistema cuenta con un **Dashboard Web para Docentes**, 
 | Gameplay - Nivel Temático | Dashboard - Panel Docente |
 |:---:|:---:|
 | <img src="https://via.placeholder.com/300x200/F9D949/FFFFFF?text=Captura+del+Juego" alt="Juego" width="100%"> | <img src="https://via.placeholder.com/300x200/3C84AB/FFFFFF?text=Panel+del+Docente" alt="Panel" width="100%"> |
-
-*(Reemplaza los enlaces de arriba con capturas reales del juego en Godot y de tu plataforma web).*
 
 ## 👩‍💻 Autoras
 
