@@ -4,9 +4,13 @@
   <h1>🌟 Videojuego Educativo - Escuela Nueva 🌟</h1>
   <p><em>Aprendizaje de inglés interactivo para niños de entornos rurales</em></p>
 
-  <a href="https://github.com/MishelleBohorquez/VideojuegoEducativo/stargazers"><img src="https://proyecto-enpix.netlify.app/" alt="Stars"></a>
-  <a href="https://github.com/MishelleBohorquez/VideojuegoEducativo/issues"><img src="https://img.shields.io/github/issues/MishelleBohorquez/VideojuegoEducativo?color=F45050&style=for-the-badge" alt="Issues"></a>
-  <a href="https://github.com/MishelleBohorquez/VideojuegoEducativo/network/members"><img src="https://img.shields.io/github/forks/MishelleBohorquez/VideojuegoEducativo?color=3C84AB&style=for-the-badge" alt="Forks"></a>
+  <a href="https://proyecto-enpix.netlify.app/" target="_blank">
+    <img src="https://img.shields.io/badge/👩‍🏫_Plataforma_Docente-Visitar_Web-3C84AB?style=for-the-badge" alt="Plataforma Docente">
+  </a>
+  <a href="https://github.com/MishelleBohorquez/VideojuegoEducativo/tree/main/Ejecutables" target="_blank">
+    <img src="https://img.shields.io/badge/🎮_Descargar_Juego-Ejecutables-F9D949?style=for-the-badge" alt="Descargar Juego">
+  </a>
+  <br><br>
 </div>
 
 ---
