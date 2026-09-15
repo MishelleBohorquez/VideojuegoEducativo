@@ -51,9 +51,9 @@ Además del juego, el ecosistema cuenta con un **Dashboard Web para Docentes**, 
 
 ## 📸 Capturas de Pantalla
 
-| Gameplay - Nivel Temático | Dashboard - Panel Docente |
+| Gameplay - Nivel Temático | Plataforma docente |
 |:---:|:---:|
-| <img src="https://via.placeholder.com/300x200/F9D949/FFFFFF?text=Captura+del+Juego" alt="Juego" width="100%"> | <img src="https://via.placeholder.com/300x200/3C84AB/FFFFFF?text=Panel+del+Docente" alt="Panel" width="100%"> |
+| <img src="./logo/ICON.png" alt="Juego" width="100%"> | <img src="./logo/plataforma.png" alt="Panel" width="100%"> |
 
 ## 👩‍💻 Autoras
 
