@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./Logo/ICON.png" alt="Banner del Proyecto" width="100%">
+  <img src="./Logo/letrero.png" alt="Banner del Proyecto" width="100%">
 
   <h1>🌟 Videojuego Educativo - Escuela Nueva 🌟</h1>
   <p><em>Aprendizaje de inglés interactivo para niños de entornos rurales</em></p>
