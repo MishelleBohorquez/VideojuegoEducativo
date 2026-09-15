@@ -35,7 +35,7 @@ Además del juego, el ecosistema cuenta con un **Dashboard Web para Docentes**, 
 
 - **Motor de Videojuego:** Godot Engine (GDScript).
 - **Diseño y Arte Visual:** Aseprite (Creación propia de todas las imágenes y sprites).
-- **Plataforma Web (Frontend):** HTML5, CSS3.
+- **Plataforma Web (Frontend):** HTML5, CSS3, JavaScript.
 - **Base de Datos y Backend:** PostgreSQL, Supabase.
 
 ## 🚀 Instalación y Despliegue
