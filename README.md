@@ -53,7 +53,7 @@ Además del juego, el ecosistema cuenta con un **Dashboard Web para Docentes**, 
 
 | Gameplay - Nivel Temático | Plataforma docente |
 |:---:|:---:|
-| <img src="./Logo/ICON.png" alt="Juego" width="100%"> | <img src="./Logo/plataforma.jpeg" alt="Panel" width="100%"> |
+| <img src="./Logo/ICON.png" alt="Juego" width="100%"> | <img src="./Logo/plataforma.jpeg" alt="Panel" width="50%"> |
 
 ## 👩‍💻 Autoras
 
