@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./logo/ICON.png" alt="Banner del Proyecto" width="100%">
+  <img src="./Logo/ICON.png" alt="Banner del Proyecto" width="100%">
 
   <h1>🌟 Videojuego Educativo - Escuela Nueva 🌟</h1>
   <p><em>Aprendizaje de inglés interactivo para niños de entornos rurales</em></p>
@@ -53,7 +53,7 @@ Además del juego, el ecosistema cuenta con un **Dashboard Web para Docentes**, 
 
 | Gameplay - Nivel Temático | Plataforma docente |
 |:---:|:---:|
-| <img src="./logo/ICON.png" alt="Juego" width="100%"> | <img src="./logo/plataforma.png" alt="Panel" width="100%"> |
+| <img src="./Logo/ICON.png" alt="Juego" width="100%"> | <img src="./Logo/plataforma.png" alt="Panel" width="100%"> |
 
 ## 👩‍💻 Autoras
 
