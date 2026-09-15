@@ -4,7 +4,7 @@
   <h1>🌟 Videojuego Educativo - Escuela Nueva 🌟</h1>
   <p><em>Aprendizaje de inglés interactivo para niños de entornos rurales</em></p>
 
-  <a href="https://github.com/MishelleBohorquez/VideojuegoEducativo/stargazers"><img src="https://img.shields.io/github/stars/MishelleBohorquez/VideojuegoEducativo?color=F9D949&style=for-the-badge" alt="Stars"></a>
+  <a href="https://github.com/MishelleBohorquez/VideojuegoEducativo/stargazers"><img src="https://proyecto-enpix.netlify.app/" alt="Stars"></a>
   <a href="https://github.com/MishelleBohorquez/VideojuegoEducativo/issues"><img src="https://img.shields.io/github/issues/MishelleBohorquez/VideojuegoEducativo?color=F45050&style=for-the-badge" alt="Issues"></a>
   <a href="https://github.com/MishelleBohorquez/VideojuegoEducativo/network/members"><img src="https://img.shields.io/github/forks/MishelleBohorquez/VideojuegoEducativo?color=3C84AB&style=for-the-badge" alt="Forks"></a>
 </div>
